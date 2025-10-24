@@ -25,6 +25,8 @@ We'll review and add it to the catalog!
 5. Push to your fork: `git push origin add-database-name`
 6. Open a Pull Request
 
+**Note:** You don't need to manually update `catalog.json` - our automated workflow will do this for you! Just add/modify the individual database JSON files.
+
 ### Database Entry Format
 
 Each database entry should include:
