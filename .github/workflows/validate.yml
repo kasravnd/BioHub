@@ -13,10 +13,14 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -31,9 +35,15 @@ jobs:
       run: |
         python scripts/update_catalog.py
 
-    - name: Check for catalog changes
+    - name: Check for catalog changes and commit
       run: |
         if [ -n "$(git status --porcelain databases/catalog.json)" ]; then
-          echo "::warning::catalog.json needs to be updated. Run 'python scripts/update_catalog.py'"
-          exit 1
+          echo "Catalog was updated, committing changes..."
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add databases/catalog.json
+          git commit -m "Auto-update catalog.json from database entries"
+          git push
+        else
+          echo "Catalog is already up-to-date"
         fi
