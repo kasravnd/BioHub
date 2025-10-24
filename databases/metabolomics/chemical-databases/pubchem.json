@@ -1,0 +1,34 @@
+{
+  "name": "PubChem",
+  "abbreviation": "PubChem",
+  "url": "https://pubchem.ncbi.nlm.nih.gov/",
+  "description": "The world's largest free database of chemical information, including structures, properties, and biological activities. PubChem provides information on chemical structures, identifiers, properties, biological activities, patents, and health and safety data.",
+  "category": "metabolomics",
+  "subcategories": ["chemical-databases"],
+  "data_types": [
+    "chemical structures",
+    "chemical properties",
+    "bioactivity data",
+    "biological assay results",
+    "compound classifications",
+    "patent information"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access (public domain)",
+  "organism": "Not organism-specific",
+  "format": ["SDF", "JSON", "XML", "CSV", "ASN.1"],
+  "updated": "Weekly updates",
+  "documentation": "https://pubchemdocs.ncbi.nlm.nih.gov/",
+  "api_docs": "https://pubchemdocs.ncbi.nlm.nih.gov/pug-rest",
+  "references": ["PMID:33151290"],
+  "funding": "NIH, NLM, NCBI",
+  "use_cases": [
+    "Chemical structure search",
+    "Compound property prediction",
+    "Bioactivity screening",
+    "Drug discovery",
+    "Chemical safety assessment"
+  ],
+  "related_to": ["ChEMBL", "DrugBank", "HMDB"],
+  "database_type": "primary_archive"
+}

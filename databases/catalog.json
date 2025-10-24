@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "last_updated": "2025-10-24",
-  "total_databases": 6,
+  "total_databases": 19,
   "categories": {
     "clinical-medical": {
       "name": "Clinical & Medical",
@@ -65,7 +65,7 @@
     "genomics": {
       "name": "Genomics",
       "description": "Genome sequences, variations, annotations, and comparative genomics",
-      "count": 1,
+      "count": 7,
       "databases": [
         {
           "name": "Ensembl",
@@ -74,8 +74,7 @@
           "description": "Ensembl is a comprehensive genome browser for vertebrate genomes that supports research in comparative genomics, evolution, sequence variation and transcriptional regulation. It provides automatic annotation of genome sequences and integrates data from multiple sources.",
           "category": "genomics",
           "subcategories": [
-            "comparative-genomics",
-            "transcriptomics"
+            "genome-browsers"
           ],
           "data_types": [
             "genome sequences",
@@ -114,14 +113,580 @@
             "Comparative genomics studies",
             "Gene expression analysis",
             "Regulatory element identification"
+          ],
+          "funding": "EMBL-EBI, Wellcome Trust, NHGRI",
+          "integrates": [
+            "RefSeq",
+            "UniProt",
+            "dbSNP",
+            "Gene Ontology"
+          ],
+          "related_to": [
+            "UCSC Genome Browser",
+            "NCBI Gene"
+          ],
+          "database_type": "genome_browser"
+        },
+        {
+          "name": "European Nucleotide Archive",
+          "abbreviation": "ENA",
+          "url": "https://www.ebi.ac.uk/ena/browser/home",
+          "description": "The European component of the International Nucleotide Sequence Database Collaboration (INSDC), providing a comprehensive record of the world's nucleotide sequencing information. ENA exchanges data daily with GenBank and DDBJ.",
+          "category": "genomics",
+          "subcategories": [
+            "nucleotide-archives"
+          ],
+          "data_types": [
+            "nucleotide sequences",
+            "DNA sequences",
+            "RNA sequences",
+            "sequence annotations",
+            "genome assemblies",
+            "raw read data"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access",
+          "organism": "All organisms",
+          "format": [
+            "EMBL flat file",
+            "FASTA",
+            "XML",
+            "JSON"
+          ],
+          "updated": "Daily updates",
+          "documentation": "https://www.ebi.ac.uk/ena/browser/about",
+          "api_docs": "https://www.ebi.ac.uk/ena/browser/api",
+          "references": [
+            "PMID:33270901"
+          ],
+          "funding": "EMBL-EBI, ELIXIR",
+          "use_cases": [
+            "Sequence submission and retrieval",
+            "Comparative genomics",
+            "Raw sequencing data access",
+            "Metagenomic studies"
+          ],
+          "member_of": [
+            "INSDC",
+            "ELIXIR"
+          ],
+          "mirrors": [
+            "GenBank",
+            "DDBJ"
+          ],
+          "related_to": [
+            "ENA Browser",
+            "EBI Search"
+          ],
+          "database_type": "primary_archive"
+        },
+        {
+          "name": "GenBank",
+          "abbreviation": "GenBank",
+          "url": "https://www.ncbi.nlm.nih.gov/genbank/",
+          "description": "The NIH genetic sequence database, an annotated collection of all publicly available DNA sequences. GenBank is part of the International Nucleotide Sequence Database Collaboration (INSDC) and exchanges data daily with its partners to form a comprehensive global archive.",
+          "category": "genomics",
+          "subcategories": [
+            "nucleotide-archives"
+          ],
+          "data_types": [
+            "nucleotide sequences",
+            "DNA sequences",
+            "RNA sequences",
+            "sequence annotations",
+            "genome assemblies"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access (public domain)",
+          "organism": "All organisms",
+          "format": [
+            "GenBank flat file",
+            "FASTA",
+            "ASN.1",
+            "XML"
+          ],
+          "updated": "Daily updates",
+          "documentation": "https://www.ncbi.nlm.nih.gov/genbank/",
+          "api_docs": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+          "references": [
+            "PMID:33270901"
+          ],
+          "funding": "NCBI, NLM, NIH",
+          "use_cases": [
+            "Sequence submission and retrieval",
+            "Comparative genomics",
+            "Phylogenetic analysis",
+            "Primer design",
+            "Gene discovery"
+          ],
+          "member_of": [
+            "INSDC"
+          ],
+          "mirrors": [
+            "ENA",
+            "DDBJ"
+          ],
+          "related_to": [
+            "RefSeq",
+            "NCBI Gene"
+          ],
+          "database_type": "primary_archive"
+        },
+        {
+          "name": "Gene Expression Omnibus",
+          "abbreviation": "GEO",
+          "url": "https://www.ncbi.nlm.nih.gov/geo",
+          "description": "GEO is a public functional genomics data repository supporting MIAME-compliant data submissions. It stores high-throughput gene expression and genomics data including array- and sequence-based data, serving as an archive and resource for gene expression studies.",
+          "category": "transcriptomics",
+          "subcategories": [
+            "genomics",
+            "epigenomics"
+          ],
+          "data_types": [
+            "gene expression data",
+            "microarray data",
+            "RNA-seq data",
+            "ChIP-seq data",
+            "methylation data",
+            "non-coding RNA profiling",
+            "genome-wide association studies"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access (public domain)",
+          "organism": "All organisms",
+          "format": [
+            "SOFT",
+            "MINiML",
+            "TSV",
+            "FASTQ",
+            "CEL"
+          ],
+          "updated": "Daily updates",
+          "api_docs": "https://www.ncbi.nlm.nih.gov/geo/info/geo_paccess.html",
+          "documentation": "https://www.ncbi.nlm.nih.gov/geo/info",
+          "references": [
+            "PMID:33290552"
+          ],
+          "funding": "NCBI, NLM, NIH",
+          "use_cases": [
+            "Meta-analysis of gene expression",
+            "Differential expression analysis",
+            "Biomarker discovery",
+            "Data reanalysis and validation",
+            "Machine learning on transcriptomics data"
           ]
+        },
+        {
+          "name": "NCBI RefSeq",
+          "abbreviation": "RefSeq",
+          "url": "https://www.ncbi.nlm.nih.gov/refseq/",
+          "description": "A comprehensive, integrated, non-redundant, and well-annotated set of reference sequences for genomes, transcripts, and proteins. RefSeq serves as a curated, value-added layer built from primary archives like GenBank.",
+          "category": "genomics",
+          "subcategories": [
+            "gene-annotation"
+          ],
+          "data_types": [
+            "reference genomes",
+            "reference transcripts",
+            "reference proteins",
+            "gene annotations",
+            "genome annotations"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access (public domain)",
+          "organism": "All organisms",
+          "format": [
+            "GenBank",
+            "FASTA",
+            "GFF",
+            "GTF"
+          ],
+          "updated": "Bi-monthly releases",
+          "documentation": "https://www.ncbi.nlm.nih.gov/refseq/about/",
+          "api_docs": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+          "references": [
+            "PMID:33270901"
+          ],
+          "funding": "NCBI, NLM, NIH",
+          "use_cases": [
+            "Genome annotation standards",
+            "Variant calling and interpretation",
+            "Gene expression quantification",
+            "Clinical genomics"
+          ],
+          "curated_from": [
+            "GenBank",
+            "ENA",
+            "DDBJ"
+          ],
+          "related_to": [
+            "NCBI Gene",
+            "GenBank"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
+        {
+          "name": "Single Nucleotide Polymorphism Database",
+          "abbreviation": "dbSNP",
+          "url": "https://www.ncbi.nlm.nih.gov/snp/",
+          "description": "A public archive for short genetic variations such as single nucleotide polymorphisms (SNPs), insertions, deletions, and other small-scale variations. dbSNP serves as a central repository for genetic variation data from humans and other organisms.",
+          "category": "genomics",
+          "subcategories": [
+            "genetic-variation"
+          ],
+          "data_types": [
+            "SNPs",
+            "insertions",
+            "deletions",
+            "microsatellites",
+            "genetic polymorphisms",
+            "allele frequencies"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access (public domain)",
+          "organism": "Multiple organisms",
+          "format": [
+            "VCF",
+            "JSON",
+            "XML",
+            "ASN.1"
+          ],
+          "updated": "Regular builds",
+          "documentation": "https://www.ncbi.nlm.nih.gov/snp/docs/",
+          "api_docs": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+          "references": [
+            "PMID:33270901"
+          ],
+          "funding": "NCBI, NLM, NIH",
+          "use_cases": [
+            "Variant identification",
+            "Population genetics studies",
+            "GWAS analysis",
+            "Primer design",
+            "Genetic diversity studies"
+          ],
+          "related_to": [
+            "ClinVar",
+            "dbVar",
+            "GWAS Catalog"
+          ],
+          "database_type": "primary_archive"
+        },
+        {
+          "name": "UCSC Genome Browser",
+          "abbreviation": "UCSC",
+          "url": "https://genome.ucsc.edu/",
+          "description": "An interactive genome browser and suite of tools for visualizing, comparing, and analyzing genomic data. The UCSC Genome Browser integrates sequence and annotation data from multiple sources and provides powerful visualization capabilities.",
+          "category": "genomics",
+          "subcategories": [
+            "genome-browsers"
+          ],
+          "data_types": [
+            "genome sequences",
+            "gene annotations",
+            "conservation data",
+            "genetic variants",
+            "epigenetic data",
+            "comparative genomics"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access for non-commercial use",
+          "organism": "Multiple organisms (human, mouse, and many others)",
+          "format": [
+            "bigBed",
+            "bigWig",
+            "BAM",
+            "VCF",
+            "BED",
+            "FASTA"
+          ],
+          "updated": "Regular updates",
+          "documentation": "https://genome.ucsc.edu/goldenPath/help/hgTracksHelp.html",
+          "api_docs": "https://genome.ucsc.edu/goldenPath/help/api.html",
+          "references": [
+            "PMID:33221922"
+          ],
+          "funding": "NHGRI, NIH",
+          "use_cases": [
+            "Genome visualization",
+            "Variant interpretation",
+            "Comparative genomics",
+            "Custom track creation",
+            "Multi-species alignment viewing"
+          ],
+          "integrates": [
+            "GenBank",
+            "RefSeq",
+            "ENCODE",
+            "dbSNP"
+          ],
+          "related_to": [
+            "Ensembl",
+            "NCBI Genome"
+          ],
+          "database_type": "genome_browser"
+        }
+      ]
+    },
+    "literature": {
+      "name": "Literature",
+      "description": "Databases in the literature category",
+      "count": 1,
+      "databases": [
+        {
+          "name": "PubMed",
+          "abbreviation": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/",
+          "description": "A free resource comprising more than 39 million citations and abstracts for biomedical literature from MEDLINE, life science journals, and online books. PubMed is the primary gateway to scientific biomedical literature.",
+          "category": "literature",
+          "data_types": [
+            "literature citations",
+            "article abstracts",
+            "MeSH terms",
+            "author information",
+            "journal metadata",
+            "publication dates"
+          ],
+          "access": [
+            "web",
+            "API"
+          ],
+          "license": "Open access for search",
+          "organism": "Not organism-specific",
+          "format": [
+            "XML",
+            "JSON",
+            "MEDLINE"
+          ],
+          "updated": "Daily updates",
+          "documentation": "https://pubmed.ncbi.nlm.nih.gov/help/",
+          "api_docs": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+          "references": [
+            "PMID:33166392"
+          ],
+          "funding": "NLM, NIH",
+          "use_cases": [
+            "Literature search",
+            "Systematic reviews",
+            "Citation tracking",
+            "Research trend analysis",
+            "Evidence-based research"
+          ],
+          "related_to": [
+            "PubMed Central",
+            "Europe PMC",
+            "MeSH"
+          ],
+          "database_type": "primary_archive"
         }
       ]
     },
     "metabolomics": {
       "name": "Metabolomics",
       "description": "Metabolites, metabolic pathways, and biochemical reactions",
+      "count": 2,
+      "databases": [
+        {
+          "name": "DrugBank",
+          "abbreviation": "DrugBank",
+          "url": "https://go.drugbank.com/",
+          "description": "A comprehensive, expert-curated pharmaceutical knowledgebase containing detailed information on drugs, drug targets, and drug actions. DrugBank combines chemical, pharmacological, and pharmaceutical data with comprehensive drug target information.",
+          "category": "metabolomics",
+          "subcategories": [
+            "drug-databases"
+          ],
+          "data_types": [
+            "drug structures",
+            "drug targets",
+            "drug interactions",
+            "pharmacology data",
+            "drug metabolism",
+            "clinical trial data"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download"
+          ],
+          "license": "Free for academic use, commercial license available",
+          "organism": "Human",
+          "format": [
+            "XML",
+            "JSON",
+            "SDF",
+            "CSV"
+          ],
+          "updated": "Regular releases (bi-annual)",
+          "documentation": "https://docs.drugbank.com/",
+          "api_docs": "https://docs.drugbank.com/v1/",
+          "references": [
+            "PMID:34216021"
+          ],
+          "funding": "Genome Canada, Canada Foundation for Innovation, University of Alberta",
+          "use_cases": [
+            "Drug discovery",
+            "Drug repurposing",
+            "Pharmacogenomics",
+            "Drug-drug interaction analysis",
+            "Target identification"
+          ],
+          "related_to": [
+            "ChEMBL",
+            "PubChem",
+            "UniProt"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
+        {
+          "name": "PubChem",
+          "abbreviation": "PubChem",
+          "url": "https://pubchem.ncbi.nlm.nih.gov/",
+          "description": "The world's largest free database of chemical information, including structures, properties, and biological activities. PubChem provides information on chemical structures, identifiers, properties, biological activities, patents, and health and safety data.",
+          "category": "metabolomics",
+          "subcategories": [
+            "chemical-databases"
+          ],
+          "data_types": [
+            "chemical structures",
+            "chemical properties",
+            "bioactivity data",
+            "biological assay results",
+            "compound classifications",
+            "patent information"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access (public domain)",
+          "organism": "Not organism-specific",
+          "format": [
+            "SDF",
+            "JSON",
+            "XML",
+            "CSV",
+            "ASN.1"
+          ],
+          "updated": "Weekly updates",
+          "documentation": "https://pubchemdocs.ncbi.nlm.nih.gov/",
+          "api_docs": "https://pubchemdocs.ncbi.nlm.nih.gov/pug-rest",
+          "references": [
+            "PMID:33151290"
+          ],
+          "funding": "NIH, NLM, NCBI",
+          "use_cases": [
+            "Chemical structure search",
+            "Compound property prediction",
+            "Bioactivity screening",
+            "Drug discovery",
+            "Chemical safety assessment"
+          ],
+          "related_to": [
+            "ChEMBL",
+            "DrugBank",
+            "HMDB"
+          ],
+          "database_type": "primary_archive"
+        }
+      ]
+    },
+    "model-organisms": {
+      "name": "Model Organisms",
+      "description": "Organism-specific databases and resources",
+      "count": 0,
+      "databases": []
+    },
+    "ontologies": {
+      "name": "Ontologies",
+      "description": "Databases in the ontologies category",
       "count": 1,
+      "databases": [
+        {
+          "name": "Gene Ontology",
+          "abbreviation": "GO",
+          "url": "https://geneontology.org/",
+          "description": "A comprehensive, computational model of biological systems that provides structured, controlled vocabularies for gene product functions. GO provides three orthogonal ontologies: molecular function, biological process, and cellular component.",
+          "category": "ontologies",
+          "data_types": [
+            "ontology terms",
+            "gene annotations",
+            "protein annotations",
+            "gene-term associations",
+            "ontology relationships"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download"
+          ],
+          "license": "Creative Commons BY 4.0",
+          "organism": "All organisms",
+          "format": [
+            "OBO",
+            "OWL",
+            "JSON",
+            "GAF",
+            "GPAD"
+          ],
+          "updated": "Monthly releases",
+          "documentation": "https://geneontology.org/docs/",
+          "api_docs": "https://api.geneontology.org/api",
+          "references": [
+            "PMID:33290552"
+          ],
+          "funding": "NHGRI, NIH",
+          "use_cases": [
+            "Functional enrichment analysis",
+            "Gene annotation",
+            "Functional genomics",
+            "Systems biology",
+            "Comparative genomics"
+          ],
+          "related_to": [
+            "UniProt",
+            "Ensembl",
+            "NCBI Gene"
+          ],
+          "database_type": "curated_knowledgebase"
+        }
+      ]
+    },
+    "pathways": {
+      "name": "Pathways",
+      "description": "Databases in the pathways category",
+      "count": 3,
       "databases": [
         {
           "name": "Kyoto Encyclopedia of Genes and Genomes",
@@ -168,14 +733,115 @@
             "Drug discovery and development",
             "Comparative genomics"
           ]
+        },
+        {
+          "name": "Reactome",
+          "abbreviation": "Reactome",
+          "url": "https://reactome.org/",
+          "description": "A free, open-source, curated, and peer-reviewed pathway database of human biological processes and reactions. Reactome provides detailed molecular-level descriptions of biological pathways and their cross-references to other resources.",
+          "category": "pathways",
+          "subcategories": [
+            "biological-pathways"
+          ],
+          "data_types": [
+            "biological pathways",
+            "molecular reactions",
+            "pathway diagrams",
+            "cellular processes",
+            "disease pathways"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download"
+          ],
+          "license": "Creative Commons Attribution 4.0",
+          "organism": "Human (with inferred orthologs for 20+ species)",
+          "format": [
+            "SBML",
+            "BioPAX",
+            "SBGN",
+            "JSON"
+          ],
+          "updated": "Quarterly releases",
+          "documentation": "https://reactome.org/documentation",
+          "api_docs": "https://reactome.org/dev/content-service",
+          "references": [
+            "PMID:35145260"
+          ],
+          "funding": "NIH, EMBL-EBI, Ontario Institute for Cancer Research",
+          "use_cases": [
+            "Pathway analysis",
+            "Enrichment analysis",
+            "Network visualization",
+            "Disease mechanism research",
+            "Drug target identification"
+          ],
+          "related_to": [
+            "KEGG",
+            "WikiPathways",
+            "STRING"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
+        {
+          "name": "STRING",
+          "abbreviation": "STRING",
+          "url": "https://string-db.org/",
+          "description": "A database of known and predicted protein-protein interactions, including direct physical and indirect functional associations. STRING integrates data from numerous sources including experimental evidence, computational prediction, and literature mining.",
+          "category": "pathways",
+          "subcategories": [
+            "molecular-interactions"
+          ],
+          "data_types": [
+            "protein-protein interactions",
+            "functional associations",
+            "interaction networks",
+            "pathway data",
+            "co-expression data"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download"
+          ],
+          "license": "Creative Commons BY 4.0",
+          "organism": "5000+ organisms",
+          "format": [
+            "TSV",
+            "JSON",
+            "XML"
+          ],
+          "updated": "Annual releases",
+          "documentation": "https://string-db.org/cgi/help",
+          "api_docs": "https://string-db.org/cgi/help?subpage=api",
+          "references": [
+            "PMID:37986224"
+          ],
+          "funding": "SNSF, ELIXIR, CPR, University of Zurich",
+          "use_cases": [
+            "Protein network analysis",
+            "Functional enrichment",
+            "Pathway analysis",
+            "Drug target identification",
+            "Systems biology research"
+          ],
+          "integrates": [
+            "BioGRID",
+            "IntAct",
+            "KEGG",
+            "Reactome",
+            "HPRD",
+            "MINT"
+          ],
+          "related_to": [
+            "BioGRID",
+            "IntAct",
+            "Reactome"
+          ],
+          "database_type": "integrative_meta_database"
         }
       ]
-    },
-    "model-organisms": {
-      "name": "Model Organisms",
-      "description": "Organism-specific databases and resources",
-      "count": 0,
-      "databases": []
     },
     "phylogenetics": {
       "name": "Phylogenetics",
@@ -186,8 +852,174 @@
     "proteomics": {
       "name": "Proteomics",
       "description": "Protein sequences, structures, functions, and interactions",
-      "count": 1,
+      "count": 4,
       "databases": [
+        {
+          "name": "InterPro",
+          "abbreviation": "InterPro",
+          "url": "https://www.ebi.ac.uk/interpro/",
+          "description": "An integrated database of protein families, domains, and functional sites that combines signatures from multiple member databases. InterPro provides a unified classification system for proteins by integrating Pfam, PROSITE, SMART, and other resources.",
+          "category": "proteomics",
+          "subcategories": [
+            "protein-families"
+          ],
+          "data_types": [
+            "protein families",
+            "protein domains",
+            "functional sites",
+            "protein signatures",
+            "sequence motifs"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access",
+          "organism": "All organisms",
+          "format": [
+            "XML",
+            "JSON",
+            "TSV",
+            "FASTA"
+          ],
+          "updated": "Regular releases (every 8 weeks)",
+          "documentation": "https://www.ebi.ac.uk/interpro/about/interpro/",
+          "api_docs": "https://www.ebi.ac.uk/interpro/api/",
+          "references": [
+            "PMID:33156333"
+          ],
+          "funding": "EMBL-EBI, BBSRC",
+          "use_cases": [
+            "Protein function prediction",
+            "Protein classification",
+            "Domain architecture analysis",
+            "Functional annotation",
+            "Comparative proteomics"
+          ],
+          "integrates": [
+            "Pfam",
+            "PROSITE",
+            "SMART",
+            "PANTHER",
+            "CDD",
+            "HAMAP",
+            "PIRSF",
+            "PRINTS",
+            "SFLD",
+            "SUPERFAMILY",
+            "TIGRFAMs",
+            "NCBIfam",
+            "CATH-Gene3D"
+          ],
+          "related_to": [
+            "UniProt",
+            "Pfam"
+          ],
+          "database_type": "integrative_meta_database"
+        },
+        {
+          "name": "Pfam",
+          "abbreviation": "Pfam",
+          "url": "http://pfam.xfam.org/",
+          "description": "A large collection of protein families, each represented by multiple sequence alignments and hidden Markov models (HMMs). Pfam is one of the foundational resources for protein domain classification and is integrated into InterPro.",
+          "category": "proteomics",
+          "subcategories": [
+            "protein-families"
+          ],
+          "data_types": [
+            "protein families",
+            "protein domains",
+            "multiple sequence alignments",
+            "hidden Markov models",
+            "domain architectures"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Creative Commons Zero (CC0)",
+          "organism": "All organisms",
+          "format": [
+            "Stockholm",
+            "FASTA",
+            "HMM",
+            "JSON"
+          ],
+          "updated": "Regular releases",
+          "documentation": "http://pfam.xfam.org/help",
+          "api_docs": "http://pfam.xfam.org/help#tabview=tab9",
+          "references": [
+            "PMID:33125078"
+          ],
+          "funding": "EMBL-EBI, HHMI, Wellcome Trust",
+          "use_cases": [
+            "Protein domain identification",
+            "Protein family classification",
+            "Functional annotation",
+            "Comparative genomics",
+            "Protein evolution studies"
+          ],
+          "member_of": [
+            "InterPro"
+          ],
+          "related_to": [
+            "InterPro",
+            "UniProt",
+            "PROSITE"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
+        {
+          "name": "Protein Data Bank",
+          "abbreviation": "PDB",
+          "url": "https://www.rcsb.org",
+          "description": "The Protein Data Bank is the single worldwide archive of structural data of biological macromolecules, containing information about experimentally-determined structures of proteins, nucleic acids, and complex assemblies. It serves as a central resource for structural biology.",
+          "category": "structural-biology",
+          "subcategories": [
+            "proteomics",
+            "systems-biology"
+          ],
+          "data_types": [
+            "3D protein structures",
+            "nucleic acid structures",
+            "protein-ligand complexes",
+            "experimental data",
+            "structural annotations"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access (CC0 1.0)",
+          "organism": "All organisms",
+          "format": [
+            "PDB",
+            "mmCIF",
+            "PDBML",
+            "FASTA",
+            "SDF"
+          ],
+          "updated": "Weekly updates",
+          "api_docs": "https://data.rcsb.org",
+          "documentation": "https://www.rcsb.org/docs",
+          "references": [
+            "PMID:30395287"
+          ],
+          "funding": "NSF, DOE, NIH, RCSB PDB",
+          "use_cases": [
+            "Structure-based drug design",
+            "Protein structure prediction validation",
+            "Molecular dynamics simulations",
+            "Structure-function relationship studies",
+            "Computational docking studies"
+          ]
+        },
         {
           "name": "UniProt",
           "abbreviation": "UniProt",
@@ -243,56 +1075,8 @@
     "structural-biology": {
       "name": "Structural Biology",
       "description": "3D structures, molecular interactions, and structural data",
-      "count": 1,
-      "databases": [
-        {
-          "name": "Protein Data Bank",
-          "abbreviation": "PDB",
-          "url": "https://www.rcsb.org",
-          "description": "The Protein Data Bank is the single worldwide archive of structural data of biological macromolecules, containing information about experimentally-determined structures of proteins, nucleic acids, and complex assemblies. It serves as a central resource for structural biology.",
-          "category": "structural-biology",
-          "subcategories": [
-            "proteomics",
-            "systems-biology"
-          ],
-          "data_types": [
-            "3D protein structures",
-            "nucleic acid structures",
-            "protein-ligand complexes",
-            "experimental data",
-            "structural annotations"
-          ],
-          "access": [
-            "web",
-            "API",
-            "download",
-            "FTP"
-          ],
-          "license": "Open access (CC0 1.0)",
-          "organism": "All organisms",
-          "format": [
-            "PDB",
-            "mmCIF",
-            "PDBML",
-            "FASTA",
-            "SDF"
-          ],
-          "updated": "Weekly updates",
-          "api_docs": "https://data.rcsb.org",
-          "documentation": "https://www.rcsb.org/docs",
-          "references": [
-            "PMID:30395287"
-          ],
-          "funding": "NSF, DOE, NIH, RCSB PDB",
-          "use_cases": [
-            "Structure-based drug design",
-            "Protein structure prediction validation",
-            "Molecular dynamics simulations",
-            "Structure-function relationship studies",
-            "Computational docking studies"
-          ]
-        }
-      ]
+      "count": 0,
+      "databases": []
     },
     "systems-biology": {
       "name": "Systems Biology",
@@ -309,58 +1093,8 @@
     "transcriptomics": {
       "name": "Transcriptomics",
       "description": "Gene expression, RNA-seq data, and transcriptional regulation",
-      "count": 1,
-      "databases": [
-        {
-          "name": "Gene Expression Omnibus",
-          "abbreviation": "GEO",
-          "url": "https://www.ncbi.nlm.nih.gov/geo",
-          "description": "GEO is a public functional genomics data repository supporting MIAME-compliant data submissions. It stores high-throughput gene expression and genomics data including array- and sequence-based data, serving as an archive and resource for gene expression studies.",
-          "category": "transcriptomics",
-          "subcategories": [
-            "genomics",
-            "epigenomics"
-          ],
-          "data_types": [
-            "gene expression data",
-            "microarray data",
-            "RNA-seq data",
-            "ChIP-seq data",
-            "methylation data",
-            "non-coding RNA profiling",
-            "genome-wide association studies"
-          ],
-          "access": [
-            "web",
-            "API",
-            "download",
-            "FTP"
-          ],
-          "license": "Open access (public domain)",
-          "organism": "All organisms",
-          "format": [
-            "SOFT",
-            "MINiML",
-            "TSV",
-            "FASTQ",
-            "CEL"
-          ],
-          "updated": "Daily updates",
-          "api_docs": "https://www.ncbi.nlm.nih.gov/geo/info/geo_paccess.html",
-          "documentation": "https://www.ncbi.nlm.nih.gov/geo/info",
-          "references": [
-            "PMID:33290552"
-          ],
-          "funding": "NCBI, NLM, NIH",
-          "use_cases": [
-            "Meta-analysis of gene expression",
-            "Differential expression analysis",
-            "Biomarker discovery",
-            "Data reanalysis and validation",
-            "Machine learning on transcriptomics data"
-          ]
-        }
-      ]
+      "count": 0,
+      "databases": []
     }
   }
 }

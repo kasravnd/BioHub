@@ -1,0 +1,34 @@
+{
+  "name": "Single Nucleotide Polymorphism Database",
+  "abbreviation": "dbSNP",
+  "url": "https://www.ncbi.nlm.nih.gov/snp/",
+  "description": "A public archive for short genetic variations such as single nucleotide polymorphisms (SNPs), insertions, deletions, and other small-scale variations. dbSNP serves as a central repository for genetic variation data from humans and other organisms.",
+  "category": "genomics",
+  "subcategories": ["genetic-variation"],
+  "data_types": [
+    "SNPs",
+    "insertions",
+    "deletions",
+    "microsatellites",
+    "genetic polymorphisms",
+    "allele frequencies"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access (public domain)",
+  "organism": "Multiple organisms",
+  "format": ["VCF", "JSON", "XML", "ASN.1"],
+  "updated": "Regular builds",
+  "documentation": "https://www.ncbi.nlm.nih.gov/snp/docs/",
+  "api_docs": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+  "references": ["PMID:33270901"],
+  "funding": "NCBI, NLM, NIH",
+  "use_cases": [
+    "Variant identification",
+    "Population genetics studies",
+    "GWAS analysis",
+    "Primer design",
+    "Genetic diversity studies"
+  ],
+  "related_to": ["ClinVar", "dbVar", "GWAS Catalog"],
+  "database_type": "primary_archive"
+}

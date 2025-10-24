@@ -1,0 +1,32 @@
+{
+  "name": "Gene Ontology",
+  "abbreviation": "GO",
+  "url": "https://geneontology.org/",
+  "description": "A comprehensive, computational model of biological systems that provides structured, controlled vocabularies for gene product functions. GO provides three orthogonal ontologies: molecular function, biological process, and cellular component.",
+  "category": "ontologies",
+  "data_types": [
+    "ontology terms",
+    "gene annotations",
+    "protein annotations",
+    "gene-term associations",
+    "ontology relationships"
+  ],
+  "access": ["web", "API", "download"],
+  "license": "Creative Commons BY 4.0",
+  "organism": "All organisms",
+  "format": ["OBO", "OWL", "JSON", "GAF", "GPAD"],
+  "updated": "Monthly releases",
+  "documentation": "https://geneontology.org/docs/",
+  "api_docs": "https://api.geneontology.org/api",
+  "references": ["PMID:33290552"],
+  "funding": "NHGRI, NIH",
+  "use_cases": [
+    "Functional enrichment analysis",
+    "Gene annotation",
+    "Functional genomics",
+    "Systems biology",
+    "Comparative genomics"
+  ],
+  "related_to": ["UniProt", "Ensembl", "NCBI Gene"],
+  "database_type": "curated_knowledgebase"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "PubMed",
+  "abbreviation": "PubMed",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/",
+  "description": "A free resource comprising more than 39 million citations and abstracts for biomedical literature from MEDLINE, life science journals, and online books. PubMed is the primary gateway to scientific biomedical literature.",
+  "category": "literature",
+  "data_types": [
+    "literature citations",
+    "article abstracts",
+    "MeSH terms",
+    "author information",
+    "journal metadata",
+    "publication dates"
+  ],
+  "access": ["web", "API"],
+  "license": "Open access for search",
+  "organism": "Not organism-specific",
+  "format": ["XML", "JSON", "MEDLINE"],
+  "updated": "Daily updates",
+  "documentation": "https://pubmed.ncbi.nlm.nih.gov/help/",
+  "api_docs": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+  "references": ["PMID:33166392"],
+  "funding": "NLM, NIH",
+  "use_cases": [
+    "Literature search",
+    "Systematic reviews",
+    "Citation tracking",
+    "Research trend analysis",
+    "Evidence-based research"
+  ],
+  "related_to": ["PubMed Central", "Europe PMC", "MeSH"],
+  "database_type": "primary_archive"
+}

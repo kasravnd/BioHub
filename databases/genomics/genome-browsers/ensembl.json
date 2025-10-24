@@ -4,7 +4,7 @@
   "url": "https://www.ensembl.org",
   "description": "Ensembl is a comprehensive genome browser for vertebrate genomes that supports research in comparative genomics, evolution, sequence variation and transcriptional regulation. It provides automatic annotation of genome sequences and integrates data from multiple sources.",
   "category": "genomics",
-  "subcategories": ["comparative-genomics", "transcriptomics"],
+  "subcategories": ["genome-browsers"],
   "data_types": [
     "genome sequences",
     "gene annotations",
@@ -27,5 +27,9 @@
     "Comparative genomics studies",
     "Gene expression analysis",
     "Regulatory element identification"
-  ]
+  ],
+  "funding": "EMBL-EBI, Wellcome Trust, NHGRI",
+  "integrates": ["RefSeq", "UniProt", "dbSNP", "Gene Ontology"],
+  "related_to": ["UCSC Genome Browser", "NCBI Gene"],
+  "database_type": "genome_browser"
 }

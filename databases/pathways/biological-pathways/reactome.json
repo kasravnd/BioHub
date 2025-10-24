@@ -1,0 +1,33 @@
+{
+  "name": "Reactome",
+  "abbreviation": "Reactome",
+  "url": "https://reactome.org/",
+  "description": "A free, open-source, curated, and peer-reviewed pathway database of human biological processes and reactions. Reactome provides detailed molecular-level descriptions of biological pathways and their cross-references to other resources.",
+  "category": "pathways",
+  "subcategories": ["biological-pathways"],
+  "data_types": [
+    "biological pathways",
+    "molecular reactions",
+    "pathway diagrams",
+    "cellular processes",
+    "disease pathways"
+  ],
+  "access": ["web", "API", "download"],
+  "license": "Creative Commons Attribution 4.0",
+  "organism": "Human (with inferred orthologs for 20+ species)",
+  "format": ["SBML", "BioPAX", "SBGN", "JSON"],
+  "updated": "Quarterly releases",
+  "documentation": "https://reactome.org/documentation",
+  "api_docs": "https://reactome.org/dev/content-service",
+  "references": ["PMID:35145260"],
+  "funding": "NIH, EMBL-EBI, Ontario Institute for Cancer Research",
+  "use_cases": [
+    "Pathway analysis",
+    "Enrichment analysis",
+    "Network visualization",
+    "Disease mechanism research",
+    "Drug target identification"
+  ],
+  "related_to": ["KEGG", "WikiPathways", "STRING"],
+  "database_type": "curated_knowledgebase"
+}

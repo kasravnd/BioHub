@@ -1,0 +1,35 @@
+{
+  "name": "European Nucleotide Archive",
+  "abbreviation": "ENA",
+  "url": "https://www.ebi.ac.uk/ena/browser/home",
+  "description": "The European component of the International Nucleotide Sequence Database Collaboration (INSDC), providing a comprehensive record of the world's nucleotide sequencing information. ENA exchanges data daily with GenBank and DDBJ.",
+  "category": "genomics",
+  "subcategories": ["nucleotide-archives"],
+  "data_types": [
+    "nucleotide sequences",
+    "DNA sequences",
+    "RNA sequences",
+    "sequence annotations",
+    "genome assemblies",
+    "raw read data"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access",
+  "organism": "All organisms",
+  "format": ["EMBL flat file", "FASTA", "XML", "JSON"],
+  "updated": "Daily updates",
+  "documentation": "https://www.ebi.ac.uk/ena/browser/about",
+  "api_docs": "https://www.ebi.ac.uk/ena/browser/api",
+  "references": ["PMID:33270901"],
+  "funding": "EMBL-EBI, ELIXIR",
+  "use_cases": [
+    "Sequence submission and retrieval",
+    "Comparative genomics",
+    "Raw sequencing data access",
+    "Metagenomic studies"
+  ],
+  "member_of": ["INSDC", "ELIXIR"],
+  "mirrors": ["GenBank", "DDBJ"],
+  "related_to": ["ENA Browser", "EBI Search"],
+  "database_type": "primary_archive"
+}

@@ -1,0 +1,35 @@
+{
+  "name": "UCSC Genome Browser",
+  "abbreviation": "UCSC",
+  "url": "https://genome.ucsc.edu/",
+  "description": "An interactive genome browser and suite of tools for visualizing, comparing, and analyzing genomic data. The UCSC Genome Browser integrates sequence and annotation data from multiple sources and provides powerful visualization capabilities.",
+  "category": "genomics",
+  "subcategories": ["genome-browsers"],
+  "data_types": [
+    "genome sequences",
+    "gene annotations",
+    "conservation data",
+    "genetic variants",
+    "epigenetic data",
+    "comparative genomics"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access for non-commercial use",
+  "organism": "Multiple organisms (human, mouse, and many others)",
+  "format": ["bigBed", "bigWig", "BAM", "VCF", "BED", "FASTA"],
+  "updated": "Regular updates",
+  "documentation": "https://genome.ucsc.edu/goldenPath/help/hgTracksHelp.html",
+  "api_docs": "https://genome.ucsc.edu/goldenPath/help/api.html",
+  "references": ["PMID:33221922"],
+  "funding": "NHGRI, NIH",
+  "use_cases": [
+    "Genome visualization",
+    "Variant interpretation",
+    "Comparative genomics",
+    "Custom track creation",
+    "Multi-species alignment viewing"
+  ],
+  "integrates": ["GenBank", "RefSeq", "ENCODE", "dbSNP"],
+  "related_to": ["Ensembl", "NCBI Genome"],
+  "database_type": "genome_browser"
+}

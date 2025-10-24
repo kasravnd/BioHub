@@ -17,11 +17,13 @@ from urllib.parse import urlparse
 
 
 REQUIRED_FIELDS = ['name', 'url', 'description', 'category', 'data_types']
-RECOMMENDED_FIELDS = ['access', 'license', 'organism', 'updated']
+RECOMMENDED_FIELDS = ['abbreviation', 'access', 'license', 'organism', 'updated', 'documentation']
+OPTIONAL_FIELDS = ['subcategories', 'references', 'funding', 'contact', 'tutorials', 'use_cases', 'api_docs']
+RELATIONSHIP_FIELDS = ['parent', 'member_of', 'curated_from', 'integrates', 'mirrors', 'related_to', 'data_type_analog', 'database_type']
 VALID_CATEGORIES = [
-    'genomics', 'proteomics', 'structural-biology', 'metabolomics',
-    'systems-biology', 'transcriptomics', 'epigenomics', 'phylogenetics',
-    'clinical-medical', 'model-organisms', 'tools-resources'
+    'genomics', 'proteomics', 'pathways', 'metabolomics',
+    'ontologies', 'literature', 'clinical-medical',
+    'model-organisms', 'structural-biology', 'tools-resources'
 ]
 
 

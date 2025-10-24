@@ -1,0 +1,33 @@
+{
+  "name": "NCBI RefSeq",
+  "abbreviation": "RefSeq",
+  "url": "https://www.ncbi.nlm.nih.gov/refseq/",
+  "description": "A comprehensive, integrated, non-redundant, and well-annotated set of reference sequences for genomes, transcripts, and proteins. RefSeq serves as a curated, value-added layer built from primary archives like GenBank.",
+  "category": "genomics",
+  "subcategories": ["gene-annotation"],
+  "data_types": [
+    "reference genomes",
+    "reference transcripts",
+    "reference proteins",
+    "gene annotations",
+    "genome annotations"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access (public domain)",
+  "organism": "All organisms",
+  "format": ["GenBank", "FASTA", "GFF", "GTF"],
+  "updated": "Bi-monthly releases",
+  "documentation": "https://www.ncbi.nlm.nih.gov/refseq/about/",
+  "api_docs": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+  "references": ["PMID:33270901"],
+  "funding": "NCBI, NLM, NIH",
+  "use_cases": [
+    "Genome annotation standards",
+    "Variant calling and interpretation",
+    "Gene expression quantification",
+    "Clinical genomics"
+  ],
+  "curated_from": ["GenBank", "ENA", "DDBJ"],
+  "related_to": ["NCBI Gene", "GenBank"],
+  "database_type": "curated_knowledgebase"
+}

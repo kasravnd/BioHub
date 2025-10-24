@@ -1,0 +1,35 @@
+{
+  "name": "GenBank",
+  "abbreviation": "GenBank",
+  "url": "https://www.ncbi.nlm.nih.gov/genbank/",
+  "description": "The NIH genetic sequence database, an annotated collection of all publicly available DNA sequences. GenBank is part of the International Nucleotide Sequence Database Collaboration (INSDC) and exchanges data daily with its partners to form a comprehensive global archive.",
+  "category": "genomics",
+  "subcategories": ["nucleotide-archives"],
+  "data_types": [
+    "nucleotide sequences",
+    "DNA sequences",
+    "RNA sequences",
+    "sequence annotations",
+    "genome assemblies"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access (public domain)",
+  "organism": "All organisms",
+  "format": ["GenBank flat file", "FASTA", "ASN.1", "XML"],
+  "updated": "Daily updates",
+  "documentation": "https://www.ncbi.nlm.nih.gov/genbank/",
+  "api_docs": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+  "references": ["PMID:33270901"],
+  "funding": "NCBI, NLM, NIH",
+  "use_cases": [
+    "Sequence submission and retrieval",
+    "Comparative genomics",
+    "Phylogenetic analysis",
+    "Primer design",
+    "Gene discovery"
+  ],
+  "member_of": ["INSDC"],
+  "mirrors": ["ENA", "DDBJ"],
+  "related_to": ["RefSeq", "NCBI Gene"],
+  "database_type": "primary_archive"
+}

@@ -1,0 +1,283 @@
+{
+  "schema_version": "2.0.0",
+  "description": "BioAwesome database entry schema with relationship support",
+
+  "fields": {
+    "required": {
+      "name": {
+        "type": "string",
+        "description": "Full name of the database",
+        "example": "Gene Expression Omnibus"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri",
+        "description": "Primary website URL",
+        "example": "https://www.ncbi.nlm.nih.gov/geo"
+      },
+      "description": {
+        "type": "string",
+        "min_length": 50,
+        "max_length": 1000,
+        "description": "Clear, concise description (2-3 sentences)",
+        "example": "A public repository for high-throughput functional genomics data."
+      },
+      "category": {
+        "type": "string",
+        "enum": [
+          "genomics",
+          "proteomics",
+          "pathways",
+          "metabolomics",
+          "ontologies",
+          "literature",
+          "model-organisms",
+          "clinical-medical",
+          "structural-biology",
+          "tools-resources"
+        ],
+        "description": "Primary category for the database"
+      },
+      "data_types": {
+        "type": "array",
+        "items": "string",
+        "min_items": 1,
+        "description": "Types of data available in the database",
+        "example": ["gene expression data", "microarray data", "RNA-seq data"]
+      }
+    },
+
+    "recommended": {
+      "abbreviation": {
+        "type": "string",
+        "description": "Common abbreviation or acronym",
+        "example": "GEO"
+      },
+      "access": {
+        "type": "array",
+        "items": {
+          "enum": ["web", "API", "download", "FTP", "CLI"]
+        },
+        "description": "Methods available for accessing the database"
+      },
+      "license": {
+        "type": "string",
+        "description": "Data license or usage terms",
+        "example": "Open access (public domain)"
+      },
+      "organism": {
+        "type": "string",
+        "description": "Target organisms (if specific)",
+        "example": "All organisms"
+      },
+      "format": {
+        "type": "array",
+        "items": "string",
+        "description": "Data formats available",
+        "example": ["SOFT", "MINiML", "TSV", "FASTQ"]
+      },
+      "updated": {
+        "type": "string",
+        "description": "Last major update or maintenance status",
+        "example": "Daily updates"
+      },
+      "documentation": {
+        "type": "string",
+        "format": "uri",
+        "description": "Link to documentation"
+      },
+      "api_docs": {
+        "type": "string",
+        "format": "uri",
+        "description": "API documentation URL"
+      }
+    },
+
+    "optional": {
+      "subcategories": {
+        "type": "array",
+        "items": "string",
+        "description": "Additional categories this database fits into"
+      },
+      "references": {
+        "type": "array",
+        "items": "string",
+        "pattern": "^PMID:\\d+$|^DOI:.*$",
+        "description": "Key publications (PMID or DOI format)",
+        "example": ["PMID:33290552"]
+      },
+      "funding": {
+        "type": "string",
+        "description": "Funding sources",
+        "example": "NCBI, NLM, NIH"
+      },
+      "contact": {
+        "type": "string",
+        "description": "Contact information or support email"
+      },
+      "tutorials": {
+        "type": "array",
+        "items": "string",
+        "description": "Tutorial or guide URLs"
+      },
+      "use_cases": {
+        "type": "array",
+        "items": "string",
+        "description": "Example research applications"
+      }
+    },
+
+    "relationships": {
+      "parent": {
+        "type": "string",
+        "description": "Parent organization or consortium (e.g., INSDC for GenBank)",
+        "example": "INSDC"
+      },
+      "member_of": {
+        "type": "array",
+        "items": "string",
+        "description": "Federations or collaborations this database is part of",
+        "example": ["INSDC", "ELIXIR"]
+      },
+      "curated_from": {
+        "type": "array",
+        "items": "string",
+        "description": "Primary archives this knowledgebase draws from",
+        "example": ["GenBank", "ENA", "DDBJ"]
+      },
+      "integrates": {
+        "type": "array",
+        "items": "string",
+        "description": "Other databases integrated by this meta-database",
+        "example": ["Pfam", "PROSITE", "SMART"]
+      },
+      "mirrors": {
+        "type": "array",
+        "items": "string",
+        "description": "Mirror sites or regional portals",
+        "example": ["ENA", "DDBJ"]
+      },
+      "related_to": {
+        "type": "array",
+        "items": "string",
+        "description": "Related or complementary databases"
+      },
+      "data_type_analog": {
+        "type": "string",
+        "description": "Analogous database in different domain (e.g., PRIDE is to proteomics what GEO is to genomics)",
+        "example": "GEO"
+      }
+    }
+  },
+
+  "categories": {
+    "genomics": {
+      "name": "Genomics",
+      "description": "Nucleotide sequences, genome annotations, genetic variation, and functional genomics",
+      "subcategories": [
+        "nucleotide-archives",
+        "gene-annotation",
+        "genome-browsers",
+        "genetic-variation",
+        "functional-genomics"
+      ]
+    },
+    "proteomics": {
+      "name": "Proteomics",
+      "description": "Protein sequences, structures, families, domains, and experimental proteomics data",
+      "subcategories": [
+        "protein-sequences",
+        "protein-families",
+        "protein-structures",
+        "proteomics-experiments"
+      ]
+    },
+    "pathways": {
+      "name": "Pathways & Interactions",
+      "description": "Biological pathways and molecular interaction networks",
+      "subcategories": [
+        "biological-pathways",
+        "molecular-interactions"
+      ]
+    },
+    "metabolomics": {
+      "name": "Metabolomics & Chemistry",
+      "description": "Small molecules, metabolites, drugs, and experimental metabolomics data",
+      "subcategories": [
+        "chemical-databases",
+        "metabolite-databases",
+        "drug-databases",
+        "metabolomics-experiments"
+      ]
+    },
+    "ontologies": {
+      "name": "Ontologies & Vocabularies",
+      "description": "Controlled vocabularies and formal definitions for data annotation and integration"
+    },
+    "literature": {
+      "name": "Literature & Publications",
+      "description": "Scientific literature databases, citation indexes, and full-text archives"
+    },
+    "model-organisms": {
+      "name": "Model Organism Databases",
+      "description": "Organism-specific curated resources (MODs)",
+      "note": "To be expanded with SGD, WormBase, FlyBase, etc."
+    },
+    "clinical-medical": {
+      "name": "Clinical & Medical",
+      "description": "Disease data, clinical trials, phenotypes, and medical genetics"
+    },
+    "structural-biology": {
+      "name": "Structural Biology",
+      "description": "3D structures, molecular interactions, and structural data"
+    },
+    "tools-resources": {
+      "name": "Tools & Resources",
+      "description": "Analysis tools, repositories, and general resources"
+    }
+  },
+
+  "database_types": {
+    "primary_archive": {
+      "name": "Primary Archive",
+      "description": "Repositories for raw, unprocessed, or minimally annotated data submitted directly by researchers",
+      "examples": ["GenBank", "GEO", "PRIDE", "MetaboLights"]
+    },
+    "curated_knowledgebase": {
+      "name": "Curated Knowledgebase",
+      "description": "Value-added layer with non-redundant, manually reviewed, and richly annotated data",
+      "examples": ["RefSeq", "UniProtKB/Swiss-Prot", "Reactome"]
+    },
+    "integrative_meta_database": {
+      "name": "Integrative Meta-Database",
+      "description": "Resources that aggregate data from numerous databases to provide unified access",
+      "examples": ["InterPro", "STRING"]
+    },
+    "genome_browser": {
+      "name": "Genome Browser",
+      "description": "Visualization and integration platforms for genomic data",
+      "examples": ["UCSC Genome Browser", "Ensembl"]
+    }
+  },
+
+  "federations": {
+    "INSDC": {
+      "name": "International Nucleotide Sequence Database Collaboration",
+      "description": "Partnership between GenBank, ENA, and DDBJ for nucleotide sequences",
+      "members": ["GenBank", "ENA", "DDBJ"],
+      "url": "https://www.insdc.org"
+    },
+    "wwPDB": {
+      "name": "Worldwide Protein Data Bank",
+      "description": "Global archive for 3D structural data of biological macromolecules",
+      "members": ["RCSB PDB", "PDBe", "PDBj"],
+      "url": "https://www.wwpdb.org"
+    },
+    "UniProt": {
+      "name": "Universal Protein Resource",
+      "description": "Central hub for protein data",
+      "components": ["UniProtKB/Swiss-Prot", "UniProtKB/TrEMBL", "UniParc"],
+      "url": "https://www.uniprot.org"
+    }
+  }
+}

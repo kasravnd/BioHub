@@ -1,0 +1,34 @@
+{
+  "name": "DrugBank",
+  "abbreviation": "DrugBank",
+  "url": "https://go.drugbank.com/",
+  "description": "A comprehensive, expert-curated pharmaceutical knowledgebase containing detailed information on drugs, drug targets, and drug actions. DrugBank combines chemical, pharmacological, and pharmaceutical data with comprehensive drug target information.",
+  "category": "metabolomics",
+  "subcategories": ["drug-databases"],
+  "data_types": [
+    "drug structures",
+    "drug targets",
+    "drug interactions",
+    "pharmacology data",
+    "drug metabolism",
+    "clinical trial data"
+  ],
+  "access": ["web", "API", "download"],
+  "license": "Free for academic use, commercial license available",
+  "organism": "Human",
+  "format": ["XML", "JSON", "SDF", "CSV"],
+  "updated": "Regular releases (bi-annual)",
+  "documentation": "https://docs.drugbank.com/",
+  "api_docs": "https://docs.drugbank.com/v1/",
+  "references": ["PMID:34216021"],
+  "funding": "Genome Canada, Canada Foundation for Innovation, University of Alberta",
+  "use_cases": [
+    "Drug discovery",
+    "Drug repurposing",
+    "Pharmacogenomics",
+    "Drug-drug interaction analysis",
+    "Target identification"
+  ],
+  "related_to": ["ChEMBL", "PubChem", "UniProt"],
+  "database_type": "curated_knowledgebase"
+}

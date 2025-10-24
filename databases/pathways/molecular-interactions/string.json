@@ -1,0 +1,34 @@
+{
+  "name": "STRING",
+  "abbreviation": "STRING",
+  "url": "https://string-db.org/",
+  "description": "A database of known and predicted protein-protein interactions, including direct physical and indirect functional associations. STRING integrates data from numerous sources including experimental evidence, computational prediction, and literature mining.",
+  "category": "pathways",
+  "subcategories": ["molecular-interactions"],
+  "data_types": [
+    "protein-protein interactions",
+    "functional associations",
+    "interaction networks",
+    "pathway data",
+    "co-expression data"
+  ],
+  "access": ["web", "API", "download"],
+  "license": "Creative Commons BY 4.0",
+  "organism": "5000+ organisms",
+  "format": ["TSV", "JSON", "XML"],
+  "updated": "Annual releases",
+  "documentation": "https://string-db.org/cgi/help",
+  "api_docs": "https://string-db.org/cgi/help?subpage=api",
+  "references": ["PMID:37986224"],
+  "funding": "SNSF, ELIXIR, CPR, University of Zurich",
+  "use_cases": [
+    "Protein network analysis",
+    "Functional enrichment",
+    "Pathway analysis",
+    "Drug target identification",
+    "Systems biology research"
+  ],
+  "integrates": ["BioGRID", "IntAct", "KEGG", "Reactome", "HPRD", "MINT"],
+  "related_to": ["BioGRID", "IntAct", "Reactome"],
+  "database_type": "integrative_meta_database"
+}

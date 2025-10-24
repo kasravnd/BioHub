@@ -26,8 +26,8 @@ def load_databases_from_files(databases_dir: str) -> List[Dict[str, Any]]:
     # Iterate through category directories
     for category_dir in databases_path.iterdir():
         if category_dir.is_dir() and not category_dir.name.startswith('.'):
-            # Iterate through JSON files in each category
-            for json_file in category_dir.glob('*.json'):
+            # Recursively iterate through JSON files in each category (including subdirectories)
+            for json_file in category_dir.rglob('*.json'):
                 try:
                     with open(json_file, 'r') as f:
                         db = json.load(f)

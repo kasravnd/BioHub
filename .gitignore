@@ -21,3 +21,8 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Research and notes
+research.md
+notes.md
+*.draft.md

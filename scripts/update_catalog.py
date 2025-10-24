@@ -48,8 +48,8 @@ def scan_databases(databases_dir: Path) -> Dict[str, List[Dict[str, Any]]]:
         category_name = category_dir.name
         categories[category_name] = []
 
-        # Load all JSON files in the category
-        for json_file in category_dir.glob('*.json'):
+        # Recursively load all JSON files in the category (including subdirectories)
+        for json_file in category_dir.rglob('*.json'):
             db = load_database_file(json_file)
             if db:
                 categories[category_name].append(db)

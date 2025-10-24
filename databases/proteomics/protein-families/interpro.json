@@ -1,0 +1,34 @@
+{
+  "name": "InterPro",
+  "abbreviation": "InterPro",
+  "url": "https://www.ebi.ac.uk/interpro/",
+  "description": "An integrated database of protein families, domains, and functional sites that combines signatures from multiple member databases. InterPro provides a unified classification system for proteins by integrating Pfam, PROSITE, SMART, and other resources.",
+  "category": "proteomics",
+  "subcategories": ["protein-families"],
+  "data_types": [
+    "protein families",
+    "protein domains",
+    "functional sites",
+    "protein signatures",
+    "sequence motifs"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access",
+  "organism": "All organisms",
+  "format": ["XML", "JSON", "TSV", "FASTA"],
+  "updated": "Regular releases (every 8 weeks)",
+  "documentation": "https://www.ebi.ac.uk/interpro/about/interpro/",
+  "api_docs": "https://www.ebi.ac.uk/interpro/api/",
+  "references": ["PMID:33156333"],
+  "funding": "EMBL-EBI, BBSRC",
+  "use_cases": [
+    "Protein function prediction",
+    "Protein classification",
+    "Domain architecture analysis",
+    "Functional annotation",
+    "Comparative proteomics"
+  ],
+  "integrates": ["Pfam", "PROSITE", "SMART", "PANTHER", "CDD", "HAMAP", "PIRSF", "PRINTS", "SFLD", "SUPERFAMILY", "TIGRFAMs", "NCBIfam", "CATH-Gene3D"],
+  "related_to": ["UniProt", "Pfam"],
+  "database_type": "integrative_meta_database"
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Pfam",
+  "abbreviation": "Pfam",
+  "url": "http://pfam.xfam.org/",
+  "description": "A large collection of protein families, each represented by multiple sequence alignments and hidden Markov models (HMMs). Pfam is one of the foundational resources for protein domain classification and is integrated into InterPro.",
+  "category": "proteomics",
+  "subcategories": ["protein-families"],
+  "data_types": [
+    "protein families",
+    "protein domains",
+    "multiple sequence alignments",
+    "hidden Markov models",
+    "domain architectures"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Creative Commons Zero (CC0)",
+  "organism": "All organisms",
+  "format": ["Stockholm", "FASTA", "HMM", "JSON"],
+  "updated": "Regular releases",
+  "documentation": "http://pfam.xfam.org/help",
+  "api_docs": "http://pfam.xfam.org/help#tabview=tab9",
+  "references": ["PMID:33125078"],
+  "funding": "EMBL-EBI, HHMI, Wellcome Trust",
+  "use_cases": [
+    "Protein domain identification",
+    "Protein family classification",
+    "Functional annotation",
+    "Comparative genomics",
+    "Protein evolution studies"
+  ],
+  "member_of": ["InterPro"],
+  "related_to": ["InterPro", "UniProt", "PROSITE"],
+  "database_type": "curated_knowledgebase"
+}

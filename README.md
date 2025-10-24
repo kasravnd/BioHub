@@ -44,17 +44,20 @@ See the complete catalog with metadata in [`databases/catalog.json`](databases/c
 
 ## Database Categories
 
-- **Genomics** - Genome sequences, variations, annotations
-- **Proteomics** - Protein sequences, structures, functions
-- **Structural Biology** - 3D structures, molecular interactions
-- **Metabolomics** - Metabolites, pathways, reactions
-- **Systems Biology** - Networks, pathways, models
-- **Transcriptomics** - Gene expression, RNA-seq data
-- **Epigenomics** - Epigenetic modifications, chromatin
-- **Phylogenetics** - Evolutionary relationships, taxonomy
-- **Clinical & Medical** - Disease data, clinical trials, phenotypes
-- **Model Organisms** - Organism-specific databases
-- **Tools & Resources** - Analysis tools, repositories, archives
+- **Genomics** - Nucleotide sequences, genome annotations, genetic variation, and functional genomics
+  - Nucleotide Archives, Gene Annotation, Genome Browsers, Genetic Variation, Functional Genomics
+- **Proteomics** - Protein sequences, families, domains, structures, and experimental proteomics
+  - Protein Sequences, Protein Families, Protein Structures, Proteomics Experiments
+- **Pathways & Interactions** - Biological pathways and molecular interaction networks
+  - Biological Pathways, Molecular Interactions
+- **Metabolomics & Chemistry** - Small molecules, metabolites, drugs, and experimental metabolomics
+  - Chemical Databases, Metabolite Databases, Drug Databases, Metabolomics Experiments
+- **Ontologies** - Controlled vocabularies and formal definitions for data annotation
+- **Literature** - Scientific literature databases, citation indexes, full-text archives
+- **Clinical & Medical** - Disease data, clinical trials, phenotypes, medical genetics
+- **Model Organisms** - Organism-specific curated resources (MODs)
+- **Structural Biology** - 3D structures, molecular interactions, structural data
+- **Tools & Resources** - Analysis tools, repositories, and general resources
 
 ## Contributing
 
@@ -77,18 +80,32 @@ Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
 ```
 BioAwesome/
-├── databases/           # Database entries organized by category
-│   ├── catalog.json    # Complete catalog with all metadata
+├── databases/              # Database entries organized by category
+│   ├── catalog.json       # Complete catalog with all metadata
 │   ├── genomics/
+│   │   ├── nucleotide-archives/
+│   │   ├── genome-browsers/
+│   │   └── ...
 │   ├── proteomics/
+│   │   ├── protein-sequences/
+│   │   ├── protein-families/
+│   │   └── ...
+│   ├── pathways/
+│   ├── metabolomics/
 │   └── ...
 ├── .github/
-│   ├── ISSUE_TEMPLATE/ # Templates for adding databases
-│   └── PULL_REQUEST_TEMPLATE.md
-├── scripts/            # Utility scripts
-│   └── search.py       # Search and filter databases
-├── CONTRIBUTING.md     # Contribution guidelines
-└── README.md          # This file
+│   ├── ISSUE_TEMPLATE/    # Templates for adding databases
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   └── workflows/         # CI/CD automation
+├── scripts/               # Utility scripts
+│   ├── search.py         # Search and filter databases
+│   ├── update_catalog.py # Update main catalog
+│   └── validate.py       # Validate database entries
+├── schema.json           # Schema definition
+├── SCHEMA.md            # Schema documentation
+├── CONTRIBUTING.md      # Contribution guidelines
+├── QUICKSTART.md        # Quick start guide
+└── README.md           # This file
 ```
 
 ## License
