@@ -56,12 +56,6 @@
         }
       ]
     },
-    "epigenomics": {
-      "name": "Epigenomics",
-      "description": "Epigenetic modifications, chromatin states, and DNA methylation",
-      "count": 0,
-      "databases": []
-    },
     "genomics": {
       "name": "Genomics",
       "description": "Genome sequences, variations, annotations, and comparative genomics",
@@ -622,12 +616,6 @@
         }
       ]
     },
-    "model-organisms": {
-      "name": "Model Organisms",
-      "description": "Organism-specific databases and resources",
-      "count": 0,
-      "databases": []
-    },
     "ontologies": {
       "name": "Ontologies",
       "description": "Databases in the ontologies category",
@@ -842,12 +830,6 @@
           "database_type": "integrative_meta_database"
         }
       ]
-    },
-    "phylogenetics": {
-      "name": "Phylogenetics",
-      "description": "Evolutionary relationships, taxonomy, and phylogenetic trees",
-      "count": 0,
-      "databases": []
     },
     "proteomics": {
       "name": "Proteomics",
@@ -1071,30 +1053,6 @@
           ]
         }
       ]
-    },
-    "structural-biology": {
-      "name": "Structural Biology",
-      "description": "3D structures, molecular interactions, and structural data",
-      "count": 0,
-      "databases": []
-    },
-    "systems-biology": {
-      "name": "Systems Biology",
-      "description": "Biological networks, pathways, and computational models",
-      "count": 0,
-      "databases": []
-    },
-    "tools-resources": {
-      "name": "Tools & Resources",
-      "description": "Analysis tools, data repositories, and general resources",
-      "count": 0,
-      "databases": []
-    },
-    "transcriptomics": {
-      "name": "Transcriptomics",
-      "description": "Gene expression, RNA-seq data, and transcriptional regulation",
-      "count": 0,
-      "databases": []
     }
   }
 }
