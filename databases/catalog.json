@@ -1,0 +1,366 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2025-10-24",
+  "total_databases": 6,
+  "categories": {
+    "clinical-medical": {
+      "name": "Clinical & Medical",
+      "description": "Disease data, clinical trials, phenotypes, and medical genetics",
+      "count": 1,
+      "databases": [
+        {
+          "name": "ClinVar",
+          "abbreviation": "ClinVar",
+          "url": "https://www.ncbi.nlm.nih.gov/clinvar",
+          "description": "ClinVar is a freely accessible public archive of reports of relationships among human variations and phenotypes with supporting evidence. It aggregates information about genomic variation and its relationship to human health, facilitating access to interpretation of variants for clinical care.",
+          "category": "clinical-medical",
+          "subcategories": [
+            "genomics"
+          ],
+          "data_types": [
+            "genetic variants",
+            "clinical significance",
+            "disease associations",
+            "variant interpretations",
+            "phenotypes",
+            "submitter evidence"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access (public domain)",
+          "organism": "Human",
+          "format": [
+            "VCF",
+            "XML",
+            "JSON",
+            "TSV"
+          ],
+          "updated": "Monthly releases",
+          "api_docs": "https://www.ncbi.nlm.nih.gov/clinvar/docs/api_http",
+          "documentation": "https://www.ncbi.nlm.nih.gov/clinvar/docs",
+          "references": [
+            "PMID:33151299"
+          ],
+          "funding": "NCBI, NLM, NIH",
+          "use_cases": [
+            "Clinical variant interpretation",
+            "Genetic testing result analysis",
+            "Variant classification and reclassification",
+            "Clinical genomics research",
+            "Precision medicine applications"
+          ]
+        }
+      ]
+    },
+    "epigenomics": {
+      "name": "Epigenomics",
+      "description": "Epigenetic modifications, chromatin states, and DNA methylation",
+      "count": 0,
+      "databases": []
+    },
+    "genomics": {
+      "name": "Genomics",
+      "description": "Genome sequences, variations, annotations, and comparative genomics",
+      "count": 1,
+      "databases": [
+        {
+          "name": "Ensembl",
+          "abbreviation": "Ensembl",
+          "url": "https://www.ensembl.org",
+          "description": "Ensembl is a comprehensive genome browser for vertebrate genomes that supports research in comparative genomics, evolution, sequence variation and transcriptional regulation. It provides automatic annotation of genome sequences and integrates data from multiple sources.",
+          "category": "genomics",
+          "subcategories": [
+            "comparative-genomics",
+            "transcriptomics"
+          ],
+          "data_types": [
+            "genome sequences",
+            "gene annotations",
+            "genetic variants",
+            "comparative genomics",
+            "regulatory features",
+            "protein sequences"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access",
+          "organism": "Vertebrates (including human, mouse, zebrafish, etc.)",
+          "format": [
+            "FASTA",
+            "GFF",
+            "GTF",
+            "VCF",
+            "JSON",
+            "XML",
+            "BAM"
+          ],
+          "updated": "Regular releases every 2-3 months",
+          "api_docs": "https://rest.ensembl.org",
+          "documentation": "https://www.ensembl.org/info/docs/index.html",
+          "references": [
+            "PMID:30407521"
+          ],
+          "use_cases": [
+            "Genome annotation and gene finding",
+            "Variant analysis and interpretation",
+            "Comparative genomics studies",
+            "Gene expression analysis",
+            "Regulatory element identification"
+          ]
+        }
+      ]
+    },
+    "metabolomics": {
+      "name": "Metabolomics",
+      "description": "Metabolites, metabolic pathways, and biochemical reactions",
+      "count": 1,
+      "databases": [
+        {
+          "name": "Kyoto Encyclopedia of Genes and Genomes",
+          "abbreviation": "KEGG",
+          "url": "https://www.kegg.jp",
+          "description": "KEGG is a comprehensive database resource for understanding high-level functions and utilities of biological systems from molecular-level information. It integrates genomic, chemical, and systemic functional information, particularly known for its pathway maps.",
+          "category": "metabolomics",
+          "subcategories": [
+            "systems-biology",
+            "genomics"
+          ],
+          "data_types": [
+            "metabolic pathways",
+            "chemical compounds",
+            "reactions",
+            "enzymes",
+            "genes",
+            "diseases",
+            "drugs"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download (subscription)"
+          ],
+          "license": "Free for academic use, subscription for commercial",
+          "organism": "All organisms (emphasis on completely sequenced genomes)",
+          "format": [
+            "KGML",
+            "JSON",
+            "flat files"
+          ],
+          "updated": "Regular updates",
+          "api_docs": "https://www.kegg.jp/kegg/rest/keggapi.html",
+          "documentation": "https://www.kegg.jp/kegg/docs",
+          "references": [
+            "PMID:33125081"
+          ],
+          "funding": "JST NBDC, Kyoto University",
+          "use_cases": [
+            "Metabolic pathway analysis",
+            "Metabolomics data interpretation",
+            "Systems biology modeling",
+            "Drug discovery and development",
+            "Comparative genomics"
+          ]
+        }
+      ]
+    },
+    "model-organisms": {
+      "name": "Model Organisms",
+      "description": "Organism-specific databases and resources",
+      "count": 0,
+      "databases": []
+    },
+    "phylogenetics": {
+      "name": "Phylogenetics",
+      "description": "Evolutionary relationships, taxonomy, and phylogenetic trees",
+      "count": 0,
+      "databases": []
+    },
+    "proteomics": {
+      "name": "Proteomics",
+      "description": "Protein sequences, structures, functions, and interactions",
+      "count": 1,
+      "databases": [
+        {
+          "name": "UniProt",
+          "abbreviation": "UniProt",
+          "url": "https://www.uniprot.org",
+          "description": "UniProt is the Universal Protein Resource, providing comprehensive, high-quality, and freely accessible protein sequence and functional information. It consists of UniProtKB (reviewed Swiss-Prot and unreviewed TrEMBL), UniRef, and UniParc.",
+          "category": "proteomics",
+          "subcategories": [
+            "genomics",
+            "structural-biology"
+          ],
+          "data_types": [
+            "protein sequences",
+            "protein functions",
+            "protein families",
+            "domains and sites",
+            "post-translational modifications",
+            "protein-protein interactions",
+            "subcellular locations"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Creative Commons Attribution 4.0",
+          "organism": "All organisms",
+          "format": [
+            "FASTA",
+            "XML",
+            "RDF",
+            "JSON",
+            "GFF",
+            "TXT"
+          ],
+          "updated": "Regular releases (8 releases per year)",
+          "api_docs": "https://www.uniprot.org/help/api",
+          "documentation": "https://www.uniprot.org/help",
+          "references": [
+            "PMID:33237286"
+          ],
+          "funding": "EMBL-EBI, SIB Swiss Institute of Bioinformatics, PIR",
+          "use_cases": [
+            "Protein sequence analysis",
+            "Functional annotation",
+            "Protein family classification",
+            "Disease variant interpretation",
+            "Proteomics data analysis"
+          ]
+        }
+      ]
+    },
+    "structural-biology": {
+      "name": "Structural Biology",
+      "description": "3D structures, molecular interactions, and structural data",
+      "count": 1,
+      "databases": [
+        {
+          "name": "Protein Data Bank",
+          "abbreviation": "PDB",
+          "url": "https://www.rcsb.org",
+          "description": "The Protein Data Bank is the single worldwide archive of structural data of biological macromolecules, containing information about experimentally-determined structures of proteins, nucleic acids, and complex assemblies. It serves as a central resource for structural biology.",
+          "category": "structural-biology",
+          "subcategories": [
+            "proteomics",
+            "systems-biology"
+          ],
+          "data_types": [
+            "3D protein structures",
+            "nucleic acid structures",
+            "protein-ligand complexes",
+            "experimental data",
+            "structural annotations"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access (CC0 1.0)",
+          "organism": "All organisms",
+          "format": [
+            "PDB",
+            "mmCIF",
+            "PDBML",
+            "FASTA",
+            "SDF"
+          ],
+          "updated": "Weekly updates",
+          "api_docs": "https://data.rcsb.org",
+          "documentation": "https://www.rcsb.org/docs",
+          "references": [
+            "PMID:30395287"
+          ],
+          "funding": "NSF, DOE, NIH, RCSB PDB",
+          "use_cases": [
+            "Structure-based drug design",
+            "Protein structure prediction validation",
+            "Molecular dynamics simulations",
+            "Structure-function relationship studies",
+            "Computational docking studies"
+          ]
+        }
+      ]
+    },
+    "systems-biology": {
+      "name": "Systems Biology",
+      "description": "Biological networks, pathways, and computational models",
+      "count": 0,
+      "databases": []
+    },
+    "tools-resources": {
+      "name": "Tools & Resources",
+      "description": "Analysis tools, data repositories, and general resources",
+      "count": 0,
+      "databases": []
+    },
+    "transcriptomics": {
+      "name": "Transcriptomics",
+      "description": "Gene expression, RNA-seq data, and transcriptional regulation",
+      "count": 1,
+      "databases": [
+        {
+          "name": "Gene Expression Omnibus",
+          "abbreviation": "GEO",
+          "url": "https://www.ncbi.nlm.nih.gov/geo",
+          "description": "GEO is a public functional genomics data repository supporting MIAME-compliant data submissions. It stores high-throughput gene expression and genomics data including array- and sequence-based data, serving as an archive and resource for gene expression studies.",
+          "category": "transcriptomics",
+          "subcategories": [
+            "genomics",
+            "epigenomics"
+          ],
+          "data_types": [
+            "gene expression data",
+            "microarray data",
+            "RNA-seq data",
+            "ChIP-seq data",
+            "methylation data",
+            "non-coding RNA profiling",
+            "genome-wide association studies"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access (public domain)",
+          "organism": "All organisms",
+          "format": [
+            "SOFT",
+            "MINiML",
+            "TSV",
+            "FASTQ",
+            "CEL"
+          ],
+          "updated": "Daily updates",
+          "api_docs": "https://www.ncbi.nlm.nih.gov/geo/info/geo_paccess.html",
+          "documentation": "https://www.ncbi.nlm.nih.gov/geo/info",
+          "references": [
+            "PMID:33290552"
+          ],
+          "funding": "NCBI, NLM, NIH",
+          "use_cases": [
+            "Meta-analysis of gene expression",
+            "Differential expression analysis",
+            "Biomarker discovery",
+            "Data reanalysis and validation",
+            "Machine learning on transcriptomics data"
+          ]
+        }
+      ]
+    }
+  }
+}

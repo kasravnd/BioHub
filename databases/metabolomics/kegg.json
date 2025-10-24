@@ -1,0 +1,33 @@
+{
+  "name": "Kyoto Encyclopedia of Genes and Genomes",
+  "abbreviation": "KEGG",
+  "url": "https://www.kegg.jp",
+  "description": "KEGG is a comprehensive database resource for understanding high-level functions and utilities of biological systems from molecular-level information. It integrates genomic, chemical, and systemic functional information, particularly known for its pathway maps.",
+  "category": "metabolomics",
+  "subcategories": ["systems-biology", "genomics"],
+  "data_types": [
+    "metabolic pathways",
+    "chemical compounds",
+    "reactions",
+    "enzymes",
+    "genes",
+    "diseases",
+    "drugs"
+  ],
+  "access": ["web", "API", "download (subscription)"],
+  "license": "Free for academic use, subscription for commercial",
+  "organism": "All organisms (emphasis on completely sequenced genomes)",
+  "format": ["KGML", "JSON", "flat files"],
+  "updated": "Regular updates",
+  "api_docs": "https://www.kegg.jp/kegg/rest/keggapi.html",
+  "documentation": "https://www.kegg.jp/kegg/docs",
+  "references": ["PMID:33125081"],
+  "funding": "JST NBDC, Kyoto University",
+  "use_cases": [
+    "Metabolic pathway analysis",
+    "Metabolomics data interpretation",
+    "Systems biology modeling",
+    "Drug discovery and development",
+    "Comparative genomics"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Ensembl",
+  "abbreviation": "Ensembl",
+  "url": "https://www.ensembl.org",
+  "description": "Ensembl is a comprehensive genome browser for vertebrate genomes that supports research in comparative genomics, evolution, sequence variation and transcriptional regulation. It provides automatic annotation of genome sequences and integrates data from multiple sources.",
+  "category": "genomics",
+  "subcategories": ["comparative-genomics", "transcriptomics"],
+  "data_types": [
+    "genome sequences",
+    "gene annotations",
+    "genetic variants",
+    "comparative genomics",
+    "regulatory features",
+    "protein sequences"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access",
+  "organism": "Vertebrates (including human, mouse, zebrafish, etc.)",
+  "format": ["FASTA", "GFF", "GTF", "VCF", "JSON", "XML", "BAM"],
+  "updated": "Regular releases every 2-3 months",
+  "api_docs": "https://rest.ensembl.org",
+  "documentation": "https://www.ensembl.org/info/docs/index.html",
+  "references": ["PMID:30407521"],
+  "use_cases": [
+    "Genome annotation and gene finding",
+    "Variant analysis and interpretation",
+    "Comparative genomics studies",
+    "Gene expression analysis",
+    "Regulatory element identification"
+  ]
+}

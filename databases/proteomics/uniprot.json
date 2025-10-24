@@ -1,0 +1,33 @@
+{
+  "name": "UniProt",
+  "abbreviation": "UniProt",
+  "url": "https://www.uniprot.org",
+  "description": "UniProt is the Universal Protein Resource, providing comprehensive, high-quality, and freely accessible protein sequence and functional information. It consists of UniProtKB (reviewed Swiss-Prot and unreviewed TrEMBL), UniRef, and UniParc.",
+  "category": "proteomics",
+  "subcategories": ["genomics", "structural-biology"],
+  "data_types": [
+    "protein sequences",
+    "protein functions",
+    "protein families",
+    "domains and sites",
+    "post-translational modifications",
+    "protein-protein interactions",
+    "subcellular locations"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Creative Commons Attribution 4.0",
+  "organism": "All organisms",
+  "format": ["FASTA", "XML", "RDF", "JSON", "GFF", "TXT"],
+  "updated": "Regular releases (8 releases per year)",
+  "api_docs": "https://www.uniprot.org/help/api",
+  "documentation": "https://www.uniprot.org/help",
+  "references": ["PMID:33237286"],
+  "funding": "EMBL-EBI, SIB Swiss Institute of Bioinformatics, PIR",
+  "use_cases": [
+    "Protein sequence analysis",
+    "Functional annotation",
+    "Protein family classification",
+    "Disease variant interpretation",
+    "Proteomics data analysis"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Gene Expression Omnibus",
+  "abbreviation": "GEO",
+  "url": "https://www.ncbi.nlm.nih.gov/geo",
+  "description": "GEO is a public functional genomics data repository supporting MIAME-compliant data submissions. It stores high-throughput gene expression and genomics data including array- and sequence-based data, serving as an archive and resource for gene expression studies.",
+  "category": "transcriptomics",
+  "subcategories": ["genomics", "epigenomics"],
+  "data_types": [
+    "gene expression data",
+    "microarray data",
+    "RNA-seq data",
+    "ChIP-seq data",
+    "methylation data",
+    "non-coding RNA profiling",
+    "genome-wide association studies"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access (public domain)",
+  "organism": "All organisms",
+  "format": ["SOFT", "MINiML", "TSV", "FASTQ", "CEL"],
+  "updated": "Daily updates",
+  "api_docs": "https://www.ncbi.nlm.nih.gov/geo/info/geo_paccess.html",
+  "documentation": "https://www.ncbi.nlm.nih.gov/geo/info",
+  "references": ["PMID:33290552"],
+  "funding": "NCBI, NLM, NIH",
+  "use_cases": [
+    "Meta-analysis of gene expression",
+    "Differential expression analysis",
+    "Biomarker discovery",
+    "Data reanalysis and validation",
+    "Machine learning on transcriptomics data"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "ClinVar",
+  "abbreviation": "ClinVar",
+  "url": "https://www.ncbi.nlm.nih.gov/clinvar",
+  "description": "ClinVar is a freely accessible public archive of reports of relationships among human variations and phenotypes with supporting evidence. It aggregates information about genomic variation and its relationship to human health, facilitating access to interpretation of variants for clinical care.",
+  "category": "clinical-medical",
+  "subcategories": ["genomics"],
+  "data_types": [
+    "genetic variants",
+    "clinical significance",
+    "disease associations",
+    "variant interpretations",
+    "phenotypes",
+    "submitter evidence"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access (public domain)",
+  "organism": "Human",
+  "format": ["VCF", "XML", "JSON", "TSV"],
+  "updated": "Monthly releases",
+  "api_docs": "https://www.ncbi.nlm.nih.gov/clinvar/docs/api_http",
+  "documentation": "https://www.ncbi.nlm.nih.gov/clinvar/docs",
+  "references": ["PMID:33151299"],
+  "funding": "NCBI, NLM, NIH",
+  "use_cases": [
+    "Clinical variant interpretation",
+    "Genetic testing result analysis",
+    "Variant classification and reclassification",
+    "Clinical genomics research",
+    "Precision medicine applications"
+  ]
+}

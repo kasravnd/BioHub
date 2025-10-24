@@ -1,0 +1,31 @@
+{
+  "name": "Protein Data Bank",
+  "abbreviation": "PDB",
+  "url": "https://www.rcsb.org",
+  "description": "The Protein Data Bank is the single worldwide archive of structural data of biological macromolecules, containing information about experimentally-determined structures of proteins, nucleic acids, and complex assemblies. It serves as a central resource for structural biology.",
+  "category": "structural-biology",
+  "subcategories": ["proteomics", "systems-biology"],
+  "data_types": [
+    "3D protein structures",
+    "nucleic acid structures",
+    "protein-ligand complexes",
+    "experimental data",
+    "structural annotations"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access (CC0 1.0)",
+  "organism": "All organisms",
+  "format": ["PDB", "mmCIF", "PDBML", "FASTA", "SDF"],
+  "updated": "Weekly updates",
+  "api_docs": "https://data.rcsb.org",
+  "documentation": "https://www.rcsb.org/docs",
+  "references": ["PMID:30395287"],
+  "funding": "NSF, DOE, NIH, RCSB PDB",
+  "use_cases": [
+    "Structure-based drug design",
+    "Protein structure prediction validation",
+    "Molecular dynamics simulations",
+    "Structure-function relationship studies",
+    "Computational docking studies"
+  ]
+}
