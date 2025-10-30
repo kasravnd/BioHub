@@ -302,12 +302,6 @@
         }
       ]
     },
-    "epigenomics": {
-      "name": "Epigenomics",
-      "description": "Databases in the epigenomics category",
-      "count": 0,
-      "databases": []
-    },
     "genomics": {
       "name": "Genomics",
       "description": "Genome sequences, variations, annotations, and comparative genomics",
@@ -2385,12 +2379,6 @@
         }
       ]
     },
-    "phylogenetics": {
-      "name": "Phylogenetics",
-      "description": "Databases in the phylogenetics category",
-      "count": 0,
-      "databases": []
-    },
     "proteomics": {
       "name": "Proteomics",
       "description": "Protein sequences, structures, functions, and interactions",
@@ -2877,30 +2865,6 @@
           ]
         }
       ]
-    },
-    "structural-biology": {
-      "name": "Structural Biology",
-      "description": "Databases in the structural-biology category",
-      "count": 0,
-      "databases": []
-    },
-    "systems-biology": {
-      "name": "Systems Biology",
-      "description": "Databases in the systems-biology category",
-      "count": 0,
-      "databases": []
-    },
-    "tools-resources": {
-      "name": "Tools Resources",
-      "description": "Databases in the tools-resources category",
-      "count": 0,
-      "databases": []
-    },
-    "transcriptomics": {
-      "name": "Transcriptomics",
-      "description": "Databases in the transcriptomics category",
-      "count": 0,
-      "databases": []
     }
   }
 }
