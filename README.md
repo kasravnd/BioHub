@@ -2,6 +2,10 @@
 
 > A curated encyclopedia of biological databases - helping researchers find the perfect database for their needs.
 
+## 📊 Database Statistics
+
+**55 databases** across **10 major categories** covering genomics, proteomics, metabolomics, clinical research, and more.
+
 ## About
 
 BioHub is a comprehensive, community-driven catalog of biological databases organized by category, data type, and research domain. Whether you're looking for genomic data, protein structures, or metabolic pathways, BioHub helps you discover the right resource.
@@ -44,20 +48,19 @@ See the complete catalog with metadata in [`databases/catalog.json`](databases/c
 
 ## Database Categories
 
-- **Genomics** - Nucleotide sequences, genome annotations, genetic variation, and functional genomics
-  - Nucleotide Archives, Gene Annotation, Genome Browsers, Genetic Variation, Functional Genomics
-- **Proteomics** - Protein sequences, families, domains, structures, and experimental proteomics
+- **Genomics (18 databases)** - Nucleotide sequences, genome annotations, genetic variation, and functional genomics
+  - Nucleotide Archives, Gene Annotation, Genome Browsers, Genetic Variation, Functional Genomics, RNA, Epigenomics
+- **Proteomics (9 databases)** - Protein sequences, families, domains, structures, and experimental proteomics
   - Protein Sequences, Protein Families, Protein Structures, Proteomics Experiments
-- **Pathways & Interactions** - Biological pathways and molecular interaction networks
+- **Pathways & Interactions (8 databases)** - Biological pathways and molecular interaction networks
   - Biological Pathways, Molecular Interactions
-- **Metabolomics & Chemistry** - Small molecules, metabolites, drugs, and experimental metabolomics
+- **Metabolomics & Chemistry (6 databases)** - Small molecules, metabolites, drugs, and experimental metabolomics
   - Chemical Databases, Metabolite Databases, Drug Databases, Metabolomics Experiments
-- **Ontologies** - Controlled vocabularies and formal definitions for data annotation
-- **Literature** - Scientific literature databases, citation indexes, full-text archives
-- **Clinical & Medical** - Disease data, clinical trials, phenotypes, medical genetics
-- **Model Organisms** - Organism-specific curated resources (MODs)
-- **Structural Biology** - 3D structures, molecular interactions, structural data
-- **Tools & Resources** - Analysis tools, repositories, and general resources
+- **Clinical & Medical (6 databases)** - Disease data, clinical trials, phenotypes, medical genetics, cancer genomics
+- **Model Organisms (6 databases)** - Organism-specific curated resources (MODs)
+  - Yeast, Worm, Fly, Mouse, Zebrafish, Rat
+- **Ontologies (1 database)** - Controlled vocabularies and formal definitions for data annotation
+- **Literature (1 database)** - Scientific literature databases, citation indexes, full-text archives
 
 ## Contributing
 
