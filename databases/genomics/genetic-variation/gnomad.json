@@ -1,0 +1,29 @@
+{
+  "name": "Genome Aggregation Database",
+  "abbreviation": "gnomAD",
+  "url": "https://gnomad.broadinstitute.org",
+  "description": "The Genome Aggregation Database is a resource developed by an international coalition of investigators that aggregates and harmonizes exome and genome sequencing data from a variety of large-scale sequencing projects.",
+  "category": "genomics",
+  "subcategories": ["genetic-variation"],
+  "data_types": [
+    "genetic variants",
+    "allele frequencies",
+    "population genetics data",
+    "structural variants"
+  ],
+  "access": ["web", "download"],
+  "license": "Open access (ODC Open Database License)",
+  "organism": "Human",
+  "format": ["VCF", "Hail MatrixTable"],
+  "updated": "Periodic major releases",
+  "documentation": "https://gnomad.broadinstitute.org/help",
+  "references": ["PMID:32461654", "PMID:27535533"],
+  "funding": "NHGRI, NIH, Broad Institute",
+  "use_cases": [
+    "Variant filtering and interpretation",
+    "Population genetics research",
+    "Clinical variant classification"
+  ],
+  "related_to": ["dbSNP", "ClinVar", "ExAC"],
+  "database_type": "curated_knowledgebase"
+}

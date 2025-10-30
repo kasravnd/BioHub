@@ -1,0 +1,30 @@
+{
+  "name": "MetaCyc",
+  "abbreviation": "MetaCyc",
+  "url": "https://metacyc.org",
+  "description": "MetaCyc is a curated database of experimentally elucidated metabolic pathways from all domains of life. It contains over 2,900 pathways from more than 3,000 organisms and is widely used for metabolic pathway prediction.",
+  "category": "pathways",
+  "subcategories": ["biological-pathways", "metabolic-pathways"],
+  "data_types": [
+    "metabolic pathways",
+    "enzymatic reactions",
+    "metabolites",
+    "enzymes",
+    "pathway diagrams"
+  ],
+  "access": ["web", "download"],
+  "license": "Free for academic use, license required for commercial use",
+  "organism": "All organisms",
+  "format": ["BioPAX", "SBML", "Pathway Tools"],
+  "updated": "Regular updates (3-4 times per year)",
+  "documentation": "https://metacyc.org/intro.shtml",
+  "references": ["PMID:33156326", "PMID:31586394"],
+  "funding": "NIH, DOE",
+  "use_cases": [
+    "Metabolic pathway analysis",
+    "Genome annotation",
+    "Metabolic engineering"
+  ],
+  "related_to": ["BioCyc", "KEGG"],
+  "database_type": "curated_knowledgebase"
+}

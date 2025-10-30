@@ -1,0 +1,33 @@
+{
+  "name": "FlyBase",
+  "abbreviation": "FlyBase",
+  "url": "https://flybase.org",
+  "description": "FlyBase is a comprehensive database for Drosophila genetics and molecular biology. It includes data on genes, alleles, phenotypes, genetic and physical interactions, reagents, sequences, genetic maps, expression, images, and literature.",
+  "category": "model-organisms",
+  "subcategories": ["insects", "genomics"],
+  "data_types": [
+    "genome sequences",
+    "gene annotations",
+    "alleles",
+    "phenotypes",
+    "genetic interactions",
+    "expression data",
+    "stocks and reagents"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access",
+  "organism": "Drosophila melanogaster and related species",
+  "format": ["GFF", "FASTA", "GAF", "TSV"],
+  "updated": "Regular releases",
+  "documentation": "https://flybase.org/wiki/FlyBase:About",
+  "api_docs": "https://flybase.org/wiki/FlyBase:API",
+  "references": ["PMID:34791371", "PMID:33219671"],
+  "funding": "NHGRI, NIH, BBSRC, MRC",
+  "use_cases": [
+    "Drosophila genetics",
+    "Developmental biology",
+    "Disease model research"
+  ],
+  "member_of": ["Alliance of Genome Resources"],
+  "database_type": "curated_knowledgebase"
+}

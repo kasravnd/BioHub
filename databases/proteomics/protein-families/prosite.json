@@ -1,0 +1,31 @@
+{
+  "name": "PROSITE",
+  "abbreviation": "PROSITE",
+  "url": "https://prosite.expasy.org",
+  "description": "PROSITE is a database of protein families and domains that consists of entries describing protein domains, families and functional sites, as well as amino acid patterns and profiles to identify them.",
+  "category": "proteomics",
+  "subcategories": ["protein-families"],
+  "data_types": [
+    "protein domains",
+    "protein families",
+    "functional sites",
+    "sequence motifs",
+    "protein signatures"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access",
+  "organism": "All organisms",
+  "format": ["DAT", "XML"],
+  "updated": "Regular updates",
+  "documentation": "https://prosite.expasy.org/prosite_doc.html",
+  "references": ["PMID:36350672", "PMID:16381852"],
+  "funding": "SIB Swiss Institute of Bioinformatics",
+  "use_cases": [
+    "Protein family classification",
+    "Functional site prediction",
+    "Protein domain identification"
+  ],
+  "integrates": ["InterPro"],
+  "related_to": ["Pfam", "InterPro", "SMART"],
+  "database_type": "curated_knowledgebase"
+}

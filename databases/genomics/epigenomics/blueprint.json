@@ -1,0 +1,31 @@
+{
+  "name": "BLUEPRINT Epigenome",
+  "abbreviation": "BLUEPRINT",
+  "url": "https://www.blueprint-epigenome.eu",
+  "description": "BLUEPRINT is a European project that aims to generate at least 100 reference epigenomes from distinct types of hematopoietic cells from healthy individuals and their malignant leukemic counterparts. It provides comprehensive epigenomic data for blood cell types.",
+  "category": "genomics",
+  "subcategories": ["epigenomics", "hematology"],
+  "data_types": [
+    "histone modifications",
+    "DNA methylation",
+    "chromatin accessibility",
+    "RNA expression",
+    "transcription factor binding"
+  ],
+  "access": ["web", "download", "FTP"],
+  "license": "Open access",
+  "organism": "Human",
+  "format": ["bigWig", "BED", "BAM", "VCF"],
+  "updated": "Completed (data maintained)",
+  "documentation": "https://www.blueprint-epigenome.eu/index.cfm?p=7BF8A4B6-F4FE-861A-2AD57A08D63D0B58",
+  "references": ["PMID:27863252"],
+  "funding": "European Commission FP7",
+  "use_cases": [
+    "Blood cell epigenomics",
+    "Leukemia research",
+    "Hematopoietic differentiation"
+  ],
+  "member_of": ["IHEC"],
+  "related_to": ["ENCODE", "Roadmap Epigenomics"],
+  "database_type": "primary_archive"
+}

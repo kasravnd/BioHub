@@ -1,0 +1,32 @@
+{
+  "name": "Human Metabolome Database",
+  "abbreviation": "HMDB",
+  "url": "https://hmdb.ca",
+  "description": "The Human Metabolome Database is a comprehensive, high-quality, freely accessible, online database of small molecule metabolites found in the human body. It contains over 220,000 metabolite entries including both water-soluble and lipid-soluble metabolites.",
+  "category": "metabolomics",
+  "subcategories": ["metabolite-databases"],
+  "data_types": [
+    "metabolite structures",
+    "metabolite concentrations",
+    "metabolite locations",
+    "disease associations",
+    "pathways",
+    "MS/NMR spectra"
+  ],
+  "access": ["web", "API", "download"],
+  "license": "Open access with attribution",
+  "organism": "Human",
+  "format": ["XML", "CSV", "SDF"],
+  "updated": "Regular updates",
+  "documentation": "https://hmdb.ca/about",
+  "api_docs": "https://hmdb.ca/api",
+  "references": ["PMID:34986597", "PMID:29140435"],
+  "funding": "Genome Canada, Canadian Institutes of Health Research",
+  "use_cases": [
+    "Metabolite identification",
+    "Metabolomics data analysis",
+    "Disease biomarker discovery"
+  ],
+  "related_to": ["METLIN", "MetaboLights"],
+  "database_type": "curated_knowledgebase"
+}

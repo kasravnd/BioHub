@@ -1,0 +1,33 @@
+{
+  "name": "Zebrafish Information Network",
+  "abbreviation": "ZFIN",
+  "url": "https://zfin.org",
+  "description": "ZFIN is the zebrafish model organism database that provides a wide array of expertly curated, organized and cross-referenced zebrafish research data. It serves as the central zebrafish genetics and genomics resource.",
+  "category": "model-organisms",
+  "subcategories": ["fish", "genomics"],
+  "data_types": [
+    "genome sequences",
+    "gene annotations",
+    "phenotypes",
+    "expression patterns",
+    "antibodies",
+    "morpholinos",
+    "anatomical ontology"
+  ],
+  "access": ["web", "API", "download"],
+  "license": "Open access",
+  "organism": "Danio rerio (zebrafish)",
+  "format": ["GFF", "FASTA", "GAF", "OBO"],
+  "updated": "Daily updates",
+  "documentation": "https://wiki.zfin.org/",
+  "api_docs": "https://zfin.org/downloads",
+  "references": ["PMID:34791407", "PMID:31905404"],
+  "funding": "NHGRI, NIH",
+  "use_cases": [
+    "Developmental biology",
+    "Disease modeling",
+    "Drug discovery"
+  ],
+  "member_of": ["Alliance of Genome Resources"],
+  "database_type": "curated_knowledgebase"
+}

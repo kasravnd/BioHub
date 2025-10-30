@@ -1,0 +1,32 @@
+{
+  "name": "Chemical Entities of Biological Interest",
+  "abbreviation": "ChEBI",
+  "url": "https://www.ebi.ac.uk/chebi",
+  "description": "ChEBI is a dictionary of molecular entities focused on small chemical compounds. It provides a comprehensive resource of chemical entities of biological interest with ontological classification and structural information.",
+  "category": "metabolomics",
+  "subcategories": ["chemical-databases", "ontologies"],
+  "data_types": [
+    "chemical structures",
+    "chemical ontology",
+    "molecular formulas",
+    "chemical properties",
+    "biological roles"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access (CC BY 4.0)",
+  "organism": "All organisms",
+  "format": ["SDF", "MOL", "InChI", "SMILES", "OBO", "OWL"],
+  "updated": "Monthly updates",
+  "documentation": "https://www.ebi.ac.uk/chebi/aboutChebiForward.do",
+  "api_docs": "https://www.ebi.ac.uk/chebi/webServices.do",
+  "references": ["PMID:36349046", "PMID:26467479"],
+  "funding": "EMBL-EBI, BBSRC",
+  "parent": "EMBL-EBI",
+  "use_cases": [
+    "Chemical entity annotation",
+    "Ontology-based data integration",
+    "Metabolite identification"
+  ],
+  "related_to": ["PubChem", "ChemSpider", "HMDB"],
+  "database_type": "curated_knowledgebase"
+}

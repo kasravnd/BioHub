@@ -1,0 +1,31 @@
+{
+  "name": "Biological General Repository for Interaction Datasets",
+  "abbreviation": "BioGRID",
+  "url": "https://thebiogrid.org",
+  "description": "BioGRID is a biomedical interaction repository containing protein and genetic interactions, chemical associations, and post-translational modifications from major model organism species.",
+  "category": "pathways",
+  "subcategories": ["molecular-interactions"],
+  "data_types": [
+    "protein-protein interactions",
+    "genetic interactions",
+    "chemical associations",
+    "post-translational modifications"
+  ],
+  "access": ["web", "API", "download"],
+  "license": "MIT License",
+  "organism": "70+ organisms",
+  "format": ["TAB", "PSI-MI", "JSON"],
+  "updated": "Monthly updates",
+  "documentation": "https://wiki.thebiogrid.org/",
+  "api_docs": "https://wiki.thebiogrid.org/doku.php/biogridrest",
+  "references": ["PMID:33237311", "PMID:28605736"],
+  "funding": "NIH, Canadian Institutes of Health Research",
+  "use_cases": [
+    "Protein interaction network analysis",
+    "Genetic interaction studies",
+    "Systems biology research"
+  ],
+  "integrates": ["STRING"],
+  "related_to": ["STRING", "IntAct", "MINT"],
+  "database_type": "curated_knowledgebase"
+}

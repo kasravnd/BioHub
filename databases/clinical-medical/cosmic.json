@@ -1,0 +1,31 @@
+{
+  "name": "Catalogue of Somatic Mutations in Cancer",
+  "abbreviation": "COSMIC",
+  "url": "https://cancer.sanger.ac.uk/cosmic",
+  "description": "COSMIC is the world's largest and most comprehensive resource for exploring the impact of somatic mutations in human cancer. It contains manually curated data from the scientific literature and large-scale sequencing projects.",
+  "category": "clinical-medical",
+  "subcategories": ["cancer-genomics"],
+  "data_types": [
+    "somatic mutations",
+    "copy number variants",
+    "gene fusions",
+    "cancer gene census",
+    "drug resistance mutations"
+  ],
+  "access": ["web", "download"],
+  "license": "Free for academic use, license required for commercial use",
+  "organism": "Human",
+  "format": ["VCF", "TSV", "CSV"],
+  "updated": "Regular releases",
+  "documentation": "https://cancer.sanger.ac.uk/cosmic/help",
+  "references": ["PMID:30371878", "PMID:28596308"],
+  "funding": "Wellcome Trust Sanger Institute",
+  "use_cases": [
+    "Cancer mutation analysis",
+    "Clinical variant interpretation",
+    "Drug resistance research"
+  ],
+  "curated_from": ["TCGA", "ICGC"],
+  "related_to": ["TCGA", "cBioPortal", "ClinVar"],
+  "database_type": "curated_knowledgebase"
+}

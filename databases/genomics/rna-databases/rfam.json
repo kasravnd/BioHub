@@ -1,0 +1,32 @@
+{
+  "name": "Rfam",
+  "abbreviation": "Rfam",
+  "url": "https://rfam.org",
+  "description": "Rfam is a database of RNA families represented by multiple sequence alignments, consensus secondary structures, and covariance models. It provides comprehensive annotation of non-coding RNA families.",
+  "category": "genomics",
+  "subcategories": ["rna-databases", "non-coding-rna"],
+  "data_types": [
+    "RNA families",
+    "RNA secondary structures",
+    "covariance models",
+    "RNA alignments",
+    "RNA motifs"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Creative Commons Zero (CC0)",
+  "organism": "All organisms",
+  "format": ["Stockholm", "FASTA", "Newick"],
+  "updated": "Regular releases",
+  "documentation": "https://rfam.readthedocs.io/",
+  "api_docs": "https://rfam.readthedocs.io/en/latest/api.html",
+  "references": ["PMID:33211869", "PMID:29112718"],
+  "funding": "BBSRC, Wellcome Trust, EMBL-EBI",
+  "use_cases": [
+    "RNA family classification",
+    "RNA structure prediction",
+    "Genome annotation"
+  ],
+  "integrates": ["RNAcentral"],
+  "related_to": ["Pfam", "InterPro"],
+  "database_type": "curated_knowledgebase"
+}

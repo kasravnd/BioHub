@@ -1,0 +1,33 @@
+{
+  "name": "cBio Cancer Genomics Portal",
+  "abbreviation": "cBioPortal",
+  "url": "https://www.cbioportal.org",
+  "description": "cBioPortal is an open-access resource for interactive exploration of multidimensional cancer genomics data sets. It provides visualization, analysis, and download of large-scale cancer genomics data from multiple studies.",
+  "category": "clinical-medical",
+  "subcategories": ["cancer-genomics"],
+  "data_types": [
+    "somatic mutations",
+    "copy number alterations",
+    "gene expression",
+    "DNA methylation",
+    "protein expression",
+    "clinical annotations"
+  ],
+  "access": ["web", "API"],
+  "license": "Open source (LGPL v3)",
+  "organism": "Human",
+  "format": ["JSON", "TSV"],
+  "updated": "Regular updates with new studies",
+  "documentation": "https://docs.cbioportal.org",
+  "api_docs": "https://www.cbioportal.org/api/swagger-ui/",
+  "references": ["PMID:34019800", "PMID:23550210"],
+  "funding": "NCI, Memorial Sloan Kettering Cancer Center",
+  "use_cases": [
+    "Cancer genomics data visualization",
+    "Multi-omics data integration",
+    "Clinical correlation analysis"
+  ],
+  "integrates": ["TCGA", "ICGC", "COSMIC"],
+  "related_to": ["TCGA", "COSMIC"],
+  "database_type": "integrative_meta_database"
+}

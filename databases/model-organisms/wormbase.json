@@ -1,0 +1,32 @@
+{
+  "name": "WormBase",
+  "abbreviation": "WormBase",
+  "url": "https://www.wormbase.org",
+  "description": "WormBase is an international consortium of biologists and computer scientists dedicated to providing the research community with accurate, current, accessible information concerning the genetics, genomics and biology of C. elegans and related nematodes.",
+  "category": "model-organisms",
+  "subcategories": ["nematodes", "genomics"],
+  "data_types": [
+    "genome sequences",
+    "gene annotations",
+    "genetic interactions",
+    "phenotypes",
+    "expression patterns",
+    "RNAi data"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access",
+  "organism": "Caenorhabditis elegans and related nematodes",
+  "format": ["GFF", "FASTA", "ACE", "GAF"],
+  "updated": "Regular releases",
+  "documentation": "https://www.wormbase.org/about/userguide",
+  "api_docs": "https://www.wormbase.org/about/userguide/for_developers",
+  "references": ["PMID:34718740", "PMID:31642470"],
+  "funding": "NHGRI, BBSRC, NIH",
+  "use_cases": [
+    "C. elegans research",
+    "Developmental biology",
+    "Neuroscience studies"
+  ],
+  "member_of": ["Alliance of Genome Resources"],
+  "database_type": "curated_knowledgebase"
+}

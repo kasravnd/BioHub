@@ -1,0 +1,33 @@
+{
+  "name": "PRoteomics IDEntifications Database",
+  "abbreviation": "PRIDE",
+  "url": "https://www.ebi.ac.uk/pride",
+  "description": "PRIDE is a repository for mass spectrometry-based proteomics data and is one of the founding members of the ProteomeXchange consortium. It stores raw mass spectrometry data, identification results, and quantitative data.",
+  "category": "proteomics",
+  "subcategories": ["proteomics-experiments"],
+  "data_types": [
+    "mass spectrometry data",
+    "protein identification data",
+    "protein quantification data",
+    "post-translational modifications"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access",
+  "organism": "All organisms",
+  "format": ["mzML", "mzIdentML", "mzTab", "RAW", "WIFF"],
+  "updated": "Daily updates",
+  "documentation": "https://www.ebi.ac.uk/pride/markdownpage/pridesubmissionhelp",
+  "api_docs": "https://www.ebi.ac.uk/pride/ws/archive/v2/swagger-ui.html",
+  "references": ["PMID:34723319", "PMID:25638542"],
+  "funding": "EMBL-EBI, Wellcome Trust",
+  "parent": "EMBL-EBI",
+  "use_cases": [
+    "Proteomics data submission and retrieval",
+    "Reanalysis of published proteomics experiments",
+    "Method benchmarking"
+  ],
+  "member_of": ["ProteomeXchange"],
+  "data_type_analog": "GEO",
+  "related_to": ["MassIVE", "PeptideAtlas"],
+  "database_type": "primary_archive"
+}

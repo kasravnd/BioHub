@@ -1,0 +1,32 @@
+{
+  "name": "Saccharomyces Genome Database",
+  "abbreviation": "SGD",
+  "url": "https://www.yeastgenome.org",
+  "description": "SGD is a scientific database of the molecular biology and genetics of the yeast Saccharomyces cerevisiae. It provides comprehensive integrated biological information for budding yeast along with search and analysis tools.",
+  "category": "model-organisms",
+  "subcategories": ["fungi", "genomics"],
+  "data_types": [
+    "genome sequences",
+    "gene annotations",
+    "protein data",
+    "phenotypes",
+    "interactions",
+    "literature"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access",
+  "organism": "Saccharomyces cerevisiae (budding yeast)",
+  "format": ["GFF", "FASTA", "GAF", "TSV"],
+  "updated": "Regular updates",
+  "documentation": "https://www.yeastgenome.org/help",
+  "api_docs": "https://www.yeastgenome.org/webservice",
+  "references": ["PMID:34559834", "PMID:22110037"],
+  "funding": "NHGRI, NIH",
+  "use_cases": [
+    "Yeast genetics research",
+    "Comparative genomics",
+    "Functional genomics studies"
+  ],
+  "member_of": ["Alliance of Genome Resources"],
+  "database_type": "curated_knowledgebase"
+}

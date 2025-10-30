@@ -1,0 +1,31 @@
+{
+  "name": "IntAct Molecular Interaction Database",
+  "abbreviation": "IntAct",
+  "url": "https://www.ebi.ac.uk/intact",
+  "description": "IntAct provides a freely available, open source database and toolkit for the storage, presentation and analysis of molecular interaction data. It is part of the International Molecular Exchange consortium.",
+  "category": "pathways",
+  "subcategories": ["molecular-interactions"],
+  "data_types": [
+    "protein-protein interactions",
+    "protein-small molecule interactions",
+    "protein-nucleic acid interactions"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Apache License 2.0",
+  "organism": "All organisms",
+  "format": ["PSI-MI", "MITAB", "JSON"],
+  "updated": "Regular updates",
+  "documentation": "https://www.ebi.ac.uk/intact/documentation",
+  "api_docs": "https://www.ebi.ac.uk/intact/documentation/webservices",
+  "references": ["PMID:34761267", "PMID:24234451"],
+  "funding": "EMBL-EBI, European Commission",
+  "parent": "EMBL-EBI",
+  "use_cases": [
+    "Protein interaction network construction",
+    "Drug target identification",
+    "Systems biology modeling"
+  ],
+  "member_of": ["IMEx"],
+  "related_to": ["STRING", "BioGRID", "MINT"],
+  "database_type": "curated_knowledgebase"
+}

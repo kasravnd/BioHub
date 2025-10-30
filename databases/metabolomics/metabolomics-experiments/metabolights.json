@@ -1,0 +1,33 @@
+{
+  "name": "MetaboLights",
+  "abbreviation": "MetaboLights",
+  "url": "https://www.ebi.ac.uk/metabolights",
+  "description": "MetaboLights is a database for metabolomics experiments and derived information. It provides a repository for metabolomics data including raw spectral data, metadata, and protocols following community standards.",
+  "category": "metabolomics",
+  "subcategories": ["metabolomics-experiments"],
+  "data_types": [
+    "NMR data",
+    "mass spectrometry data",
+    "metabolite quantification",
+    "experimental metadata",
+    "protocols"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access",
+  "organism": "All organisms",
+  "format": ["mzML", "nmrML", "ISA-Tab"],
+  "updated": "Regular updates",
+  "documentation": "https://www.ebi.ac.uk/metabolights/about",
+  "api_docs": "https://www.ebi.ac.uk/metabolights/webservice",
+  "references": ["PMID:31691833", "PMID:27899658"],
+  "funding": "EMBL-EBI, BBSRC",
+  "parent": "EMBL-EBI",
+  "use_cases": [
+    "Metabolomics data submission",
+    "Reanalysis of published metabolomics studies",
+    "Method validation and benchmarking"
+  ],
+  "data_type_analog": "GEO",
+  "related_to": ["Metabolomics Workbench", "HMDB"],
+  "database_type": "primary_archive"
+}

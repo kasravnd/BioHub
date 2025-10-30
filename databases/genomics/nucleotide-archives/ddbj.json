@@ -1,0 +1,31 @@
+{
+  "name": "DNA Data Bank of Japan",
+  "abbreviation": "DDBJ",
+  "url": "https://www.ddbj.nig.ac.jp",
+  "description": "The DNA Data Bank of Japan is one of the three partners of the International Nucleotide Sequence Database Collaboration (INSDC), along with GenBank and ENA. DDBJ collects and provides public access to nucleotide sequence data and related information.",
+  "category": "genomics",
+  "subcategories": ["nucleotide-archives"],
+  "data_types": [
+    "nucleotide sequences",
+    "genome sequences",
+    "RNA sequences",
+    "raw sequencing reads"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access (public domain)",
+  "organism": "All organisms",
+  "format": ["FASTA", "GenBank", "EMBL", "DDBJ", "FASTQ"],
+  "updated": "Daily synchronization with INSDC partners",
+  "documentation": "https://www.ddbj.nig.ac.jp/ddbj/index-e.html",
+  "api_docs": "https://www.ddbj.nig.ac.jp/services-e.html",
+  "references": ["PMID:33156333"],
+  "funding": "National Institute of Genetics, Japan",
+  "use_cases": [
+    "Nucleotide sequence submission and retrieval",
+    "Comparative genomics",
+    "Phylogenetic analysis"
+  ],
+  "member_of": ["INSDC"],
+  "mirrors": ["GenBank", "ENA"],
+  "database_type": "primary_archive"
+}

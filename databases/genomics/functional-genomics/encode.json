@@ -1,0 +1,31 @@
+{
+  "name": "Encyclopedia of DNA Elements",
+  "abbreviation": "ENCODE",
+  "url": "https://www.encodeproject.org",
+  "description": "ENCODE is a comprehensive catalog of functional elements in the human and model organism genomes. The project aims to identify all functional elements including genes, transcripts, and regulatory regions.",
+  "category": "genomics",
+  "subcategories": ["functional-genomics", "epigenomics"],
+  "data_types": [
+    "transcription factor binding sites",
+    "chromatin accessibility",
+    "histone modifications",
+    "DNA methylation",
+    "RNA expression",
+    "chromatin interactions"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access",
+  "organism": "Human, mouse, and other model organisms",
+  "format": ["BAM", "BED", "bigWig", "FASTQ"],
+  "updated": "Regular releases",
+  "documentation": "https://www.encodeproject.org/help/",
+  "api_docs": "https://www.encodeproject.org/help/rest-api/",
+  "references": ["PMID:32728249", "PMID:22955616"],
+  "funding": "NHGRI, NIH",
+  "use_cases": [
+    "Regulatory element annotation",
+    "Transcription factor analysis",
+    "Epigenomic profiling"
+  ],
+  "database_type": "curated_knowledgebase"
+}

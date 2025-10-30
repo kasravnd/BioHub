@@ -1,0 +1,33 @@
+{
+  "name": "ArrayExpress",
+  "abbreviation": "ArrayExpress",
+  "url": "https://www.ebi.ac.uk/arrayexpress",
+  "description": "ArrayExpress is a database of functional genomics experiments that stores data from high-throughput functional genomics experiments. It includes gene expression data from microarray and sequencing platforms.",
+  "category": "genomics",
+  "subcategories": ["functional-genomics"],
+  "data_types": [
+    "gene expression data",
+    "microarray data",
+    "RNA-seq data",
+    "ChIP-seq data",
+    "methylation data"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access",
+  "organism": "All organisms",
+  "format": ["MAGE-TAB", "FASTQ", "CEL", "BAM"],
+  "updated": "Regular updates",
+  "documentation": "https://www.ebi.ac.uk/arrayexpress/help/index.html",
+  "api_docs": "https://www.ebi.ac.uk/arrayexpress/help/programmatic_access.html",
+  "references": ["PMID:25361974"],
+  "funding": "EMBL-EBI",
+  "parent": "EMBL-EBI",
+  "use_cases": [
+    "Gene expression meta-analysis",
+    "Transcriptomics data mining",
+    "Comparative expression analysis"
+  ],
+  "data_type_analog": "GEO",
+  "related_to": ["GEO", "ENA"],
+  "database_type": "primary_archive"
+}

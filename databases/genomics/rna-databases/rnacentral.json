@@ -1,0 +1,34 @@
+{
+  "name": "RNAcentral",
+  "abbreviation": "RNAcentral",
+  "url": "https://rnacentral.org",
+  "description": "RNAcentral is a comprehensive database of non-coding RNA sequences that provides a single access point to 44 RNA resources and over 18 million ncRNA sequences from a wide range of organisms and RNA types.",
+  "category": "genomics",
+  "subcategories": ["rna-databases", "non-coding-rna"],
+  "data_types": [
+    "non-coding RNA sequences",
+    "lncRNA",
+    "miRNA",
+    "tRNA",
+    "rRNA",
+    "snoRNA",
+    "piRNA",
+    "snRNA"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access",
+  "organism": "All organisms",
+  "format": ["FASTA", "JSON", "GFF", "BED"],
+  "updated": "Regular releases",
+  "documentation": "https://rnacentral.org/help",
+  "api_docs": "https://rnacentral.org/api",
+  "references": ["PMID:33325481", "PMID:30395267"],
+  "funding": "BBSRC, Wellcome Trust, EMBL-EBI",
+  "use_cases": [
+    "Non-coding RNA identification",
+    "RNA sequence annotation",
+    "Comparative RNA genomics"
+  ],
+  "integrates": ["miRBase", "lncRNAdb", "GtRNAdb", "Rfam"],
+  "database_type": "integrative_meta_database"
+}

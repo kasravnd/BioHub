@@ -1,0 +1,31 @@
+{
+  "name": "WikiPathways",
+  "abbreviation": "WikiPathways",
+  "url": "https://www.wikipathways.org",
+  "description": "WikiPathways is an open, collaborative platform for biological pathway curation. It enables researchers to create, update, and share pathway diagrams in a wiki-based format with community contributions.",
+  "category": "pathways",
+  "subcategories": ["biological-pathways"],
+  "data_types": [
+    "biological pathways",
+    "metabolic pathways",
+    "signaling pathways",
+    "disease pathways",
+    "pathway diagrams"
+  ],
+  "access": ["web", "API", "download"],
+  "license": "Creative Commons CC0",
+  "organism": "Multiple organisms",
+  "format": ["GPML", "BioPAX", "SVG", "PDF", "PNG"],
+  "updated": "Continuous community updates",
+  "documentation": "https://www.wikipathways.org/help.html",
+  "api_docs": "https://www.wikipathways.org/api/",
+  "references": ["PMID:34850161", "PMID:28146670"],
+  "funding": "NRNB, Gladstone Institutes, Maastricht University",
+  "use_cases": [
+    "Pathway visualization",
+    "Community-based pathway curation",
+    "Omics data integration"
+  ],
+  "related_to": ["Reactome", "KEGG"],
+  "database_type": "curated_knowledgebase"
+}

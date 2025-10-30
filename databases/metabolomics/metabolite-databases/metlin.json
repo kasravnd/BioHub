@@ -1,0 +1,30 @@
+{
+  "name": "METLIN Metabolite Database",
+  "abbreviation": "METLIN",
+  "url": "https://metlin.scripps.edu",
+  "description": "METLIN is a metabolite mass spectral database containing over 960,000 compounds. It provides tandem mass spectrometry (MS/MS) data and is widely used for metabolite identification in untargeted metabolomics experiments.",
+  "category": "metabolomics",
+  "subcategories": ["metabolite-databases"],
+  "data_types": [
+    "mass spectra",
+    "MS/MS spectra",
+    "metabolite structures",
+    "retention times",
+    "collision cross sections"
+  ],
+  "access": ["web"],
+  "license": "Free for academic use, subscription for commercial use",
+  "organism": "All organisms",
+  "format": ["MGF", "MSP"],
+  "updated": "Regular updates",
+  "documentation": "https://metlin.scripps.edu/landing_page.php?pgcontent=help",
+  "references": ["PMID:35143633", "PMID:22135287"],
+  "funding": "NIH, Scripps Research",
+  "use_cases": [
+    "Metabolite identification from mass spectrometry",
+    "Untargeted metabolomics",
+    "Tandem MS library matching"
+  ],
+  "related_to": ["HMDB", "mzCloud", "MassBank"],
+  "database_type": "curated_knowledgebase"
+}

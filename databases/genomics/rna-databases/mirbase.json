@@ -1,0 +1,30 @@
+{
+  "name": "miRBase",
+  "abbreviation": "miRBase",
+  "url": "https://www.mirbase.org",
+  "description": "miRBase is the primary online repository for miRNA sequences and annotation. It provides a comprehensive searchable database of published miRNA sequences and annotations with information on genomic location and predicted targets.",
+  "category": "genomics",
+  "subcategories": ["rna-databases", "non-coding-rna"],
+  "data_types": [
+    "miRNA sequences",
+    "miRNA annotations",
+    "genomic locations",
+    "precursor sequences",
+    "mature sequences"
+  ],
+  "access": ["web", "download", "FTP"],
+  "license": "Open access",
+  "organism": "271 organisms",
+  "format": ["FASTA", "GFF", "EMBL"],
+  "updated": "Periodic updates",
+  "documentation": "https://www.mirbase.org/help/",
+  "references": ["PMID:30423142", "PMID:28645171"],
+  "funding": "BBSRC, Wellcome Trust",
+  "use_cases": [
+    "miRNA identification",
+    "Target prediction",
+    "miRNA expression analysis"
+  ],
+  "integrates": ["RNAcentral"],
+  "database_type": "curated_knowledgebase"
+}

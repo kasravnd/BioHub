@@ -1,0 +1,31 @@
+{
+  "name": "GENCODE",
+  "abbreviation": "GENCODE",
+  "url": "https://www.gencodegenes.org",
+  "description": "GENCODE produces high-quality reference gene annotation for human and mouse genomes. It is the default gene annotation for the human genome used by the Ensembl and UCSC Genome Browsers.",
+  "category": "genomics",
+  "subcategories": ["gene-annotation"],
+  "data_types": [
+    "gene annotations",
+    "transcript annotations",
+    "protein-coding genes",
+    "lncRNAs",
+    "pseudogenes"
+  ],
+  "access": ["web", "download", "FTP"],
+  "license": "Open access",
+  "organism": "Human, mouse",
+  "format": ["GTF", "GFF3", "FASTA"],
+  "updated": "Regular releases",
+  "documentation": "https://www.gencodegenes.org/pages/documentation.html",
+  "references": ["PMID:33270111", "PMID:22955987"],
+  "funding": "NHGRI, NIH, Wellcome Trust",
+  "use_cases": [
+    "Gene annotation",
+    "RNA-seq analysis",
+    "Variant interpretation"
+  ],
+  "integrates": ["Ensembl", "UCSC Genome Browser"],
+  "related_to": ["RefSeq", "Ensembl"],
+  "database_type": "curated_knowledgebase"
+}

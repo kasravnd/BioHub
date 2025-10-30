@@ -1,0 +1,31 @@
+{
+  "name": "TrEMBL",
+  "abbreviation": "TrEMBL",
+  "url": "https://www.uniprot.org/help/uniprotkb_trembl",
+  "description": "TrEMBL contains computationally analyzed protein sequences from the translation of coding sequences in the EMBL-Bank/GenBank/DDBJ databases. It provides automatic annotation and classification awaiting full manual annotation in Swiss-Prot.",
+  "category": "proteomics",
+  "subcategories": ["protein-sequences"],
+  "data_types": [
+    "protein sequences",
+    "automated annotations",
+    "predicted protein features"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Creative Commons Attribution 4.0 International",
+  "organism": "All organisms",
+  "format": ["FASTA", "XML", "RDF", "TXT"],
+  "updated": "Biweekly releases",
+  "documentation": "https://www.uniprot.org/help/",
+  "api_docs": "https://www.uniprot.org/help/api",
+  "references": ["PMID:36408920"],
+  "funding": "SIB Swiss Institute of Bioinformatics, EMBL-EBI, PIR",
+  "use_cases": [
+    "Protein sequence retrieval",
+    "Automated protein annotation",
+    "Comprehensive proteome coverage"
+  ],
+  "member_of": ["UniProt"],
+  "curated_from": ["GenBank", "EMBL", "DDBJ"],
+  "related_to": ["Swiss-Prot"],
+  "database_type": "primary_archive"
+}

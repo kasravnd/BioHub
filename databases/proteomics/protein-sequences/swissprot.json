@@ -1,0 +1,33 @@
+{
+  "name": "Swiss-Prot",
+  "abbreviation": "Swiss-Prot",
+  "url": "https://www.uniprot.org/help/uniprotkb_swiss-prot",
+  "description": "Swiss-Prot is the manually annotated and reviewed section of the UniProt Knowledgebase. It provides high-quality, non-redundant protein sequence annotations with a high level of integration with other databases.",
+  "category": "proteomics",
+  "subcategories": ["protein-sequences"],
+  "data_types": [
+    "protein sequences",
+    "protein functions",
+    "subcellular locations",
+    "post-translational modifications",
+    "protein domains",
+    "disease associations"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Creative Commons Attribution 4.0 International",
+  "organism": "All organisms",
+  "format": ["FASTA", "XML", "RDF", "TXT"],
+  "updated": "Biweekly releases",
+  "documentation": "https://www.uniprot.org/help/",
+  "api_docs": "https://www.uniprot.org/help/api",
+  "references": ["PMID:36408920", "PMID:33237286"],
+  "funding": "SIB Swiss Institute of Bioinformatics, EMBL-EBI, PIR",
+  "use_cases": [
+    "Protein functional annotation",
+    "Sequence analysis",
+    "Protein family classification"
+  ],
+  "member_of": ["UniProt"],
+  "curated_from": ["GenBank", "EMBL", "DDBJ"],
+  "database_type": "curated_knowledgebase"
+}

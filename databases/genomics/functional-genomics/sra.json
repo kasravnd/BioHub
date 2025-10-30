@@ -1,0 +1,33 @@
+{
+  "name": "Sequence Read Archive",
+  "abbreviation": "SRA",
+  "url": "https://www.ncbi.nlm.nih.gov/sra",
+  "description": "The Sequence Read Archive is NCBI's primary archive of high-throughput sequencing data. SRA stores raw sequencing data and alignment information from next-generation sequencing platforms.",
+  "category": "genomics",
+  "subcategories": ["functional-genomics"],
+  "data_types": [
+    "raw sequencing reads",
+    "RNA-seq data",
+    "ChIP-seq data",
+    "WGS data",
+    "exome sequencing"
+  ],
+  "access": ["web", "API", "download", "FTP", "CLI"],
+  "license": "Open access (public domain)",
+  "organism": "All organisms",
+  "format": ["FASTQ", "SRA", "BAM", "CRAM"],
+  "updated": "Daily updates",
+  "documentation": "https://www.ncbi.nlm.nih.gov/sra/docs/",
+  "api_docs": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+  "references": ["PMID:21062823"],
+  "funding": "NCBI, NLM, NIH",
+  "contact": "sra@ncbi.nlm.nih.gov",
+  "use_cases": [
+    "Raw sequencing data access",
+    "Reanalysis of published sequencing experiments",
+    "Method development and validation"
+  ],
+  "related_to": ["GEO", "ENA"],
+  "parent": "NCBI",
+  "database_type": "primary_archive"
+}

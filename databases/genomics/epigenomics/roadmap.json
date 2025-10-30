@@ -1,0 +1,31 @@
+{
+  "name": "NIH Roadmap Epigenomics Mapping Consortium",
+  "abbreviation": "Roadmap Epigenomics",
+  "url": "http://www.roadmapepigenomics.org",
+  "description": "The NIH Roadmap Epigenomics Mapping Consortium produced a public resource of human epigenomic data including reference epigenome maps for stem cells and primary ex vivo tissues. It includes integrative analysis of 111 reference human epigenomes.",
+  "category": "genomics",
+  "subcategories": ["epigenomics", "functional-genomics"],
+  "data_types": [
+    "histone modifications",
+    "DNA methylation",
+    "chromatin accessibility",
+    "RNA expression",
+    "enhancer annotations"
+  ],
+  "access": ["web", "download", "FTP"],
+  "license": "Open access",
+  "organism": "Human",
+  "format": ["bigWig", "BED", "BAM"],
+  "updated": "Completed (legacy data maintained)",
+  "documentation": "http://www.roadmapepigenomics.org/overview",
+  "references": ["PMID:25693563", "PMID:25693564"],
+  "funding": "NIH Common Fund",
+  "use_cases": [
+    "Epigenome annotation",
+    "Regulatory element identification",
+    "Disease epigenetics"
+  ],
+  "member_of": ["IHEC"],
+  "related_to": ["ENCODE", "BLUEPRINT"],
+  "database_type": "primary_archive"
+}

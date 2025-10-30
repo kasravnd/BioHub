@@ -1,0 +1,31 @@
+{
+  "name": "Online Mendelian Inheritance in Man",
+  "abbreviation": "OMIM",
+  "url": "https://www.omim.org",
+  "description": "OMIM is a comprehensive, authoritative compendium of human genes and genetic phenotypes. It contains information on all known Mendelian disorders and over 16,000 genes, with a focus on the relationship between phenotype and genotype.",
+  "category": "clinical-medical",
+  "subcategories": ["genetic-diseases", "medical-genetics"],
+  "data_types": [
+    "genetic disorders",
+    "gene-phenotype relationships",
+    "disease descriptions",
+    "genetic variants",
+    "inheritance patterns"
+  ],
+  "access": ["web", "API", "download"],
+  "license": "Free for individual use, license required for redistribution",
+  "organism": "Human",
+  "format": ["TXT", "JSON"],
+  "updated": "Daily updates",
+  "documentation": "https://www.omim.org/help",
+  "api_docs": "https://www.omim.org/help/api",
+  "references": ["PMID:30445645", "PMID:28654725"],
+  "funding": "NHGRI, NIH",
+  "use_cases": [
+    "Clinical variant interpretation",
+    "Genetic disease research",
+    "Gene-disease association discovery"
+  ],
+  "related_to": ["ClinVar", "Orphanet", "GTR"],
+  "database_type": "curated_knowledgebase"
+}

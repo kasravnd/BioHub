@@ -1,0 +1,33 @@
+{
+  "name": "Rat Genome Database",
+  "abbreviation": "RGD",
+  "url": "https://rgd.mcw.edu",
+  "description": "RGD is a collaborative effort between leading rat researchers and bioinformaticians to collect, consolidate, and integrate rat genomic and phenotype data. It provides tools and resources for rat, mouse, and human comparative genomics.",
+  "category": "model-organisms",
+  "subcategories": ["mammals", "genomics"],
+  "data_types": [
+    "genome sequences",
+    "gene annotations",
+    "QTLs",
+    "strains",
+    "phenotypes",
+    "disease models",
+    "pathways"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access",
+  "organism": "Rattus norvegicus (rat), with mouse and human data",
+  "format": ["GFF", "FASTA", "GAF", "VCF"],
+  "updated": "Regular updates",
+  "documentation": "https://rgd.mcw.edu/wg/help",
+  "api_docs": "https://rgd.mcw.edu/wg/webservice/",
+  "references": ["PMID:34850957", "PMID:33231639"],
+  "funding": "NHGRI, NHLBI, NIH",
+  "use_cases": [
+    "Rat genetics research",
+    "Disease model studies",
+    "Comparative mammalian genomics"
+  ],
+  "member_of": ["Alliance of Genome Resources"],
+  "database_type": "curated_knowledgebase"
+}

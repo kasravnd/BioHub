@@ -1,0 +1,32 @@
+{
+  "name": "BioCyc",
+  "abbreviation": "BioCyc",
+  "url": "https://biocyc.org",
+  "description": "BioCyc is a collection of Pathway/Genome Databases for thousands of organisms. It includes organism-specific databases that contain curated metabolic pathways, regulatory networks, transporters, and other cellular functions.",
+  "category": "pathways",
+  "subcategories": ["biological-pathways", "metabolic-pathways"],
+  "data_types": [
+    "metabolic pathways",
+    "regulatory networks",
+    "genome annotations",
+    "enzymatic reactions",
+    "metabolites"
+  ],
+  "access": ["web", "API", "download"],
+  "license": "Free for academic use, subscription for commercial use",
+  "organism": "3000+ organisms",
+  "format": ["BioPAX", "SBML", "Pathway Tools"],
+  "updated": "Regular updates",
+  "documentation": "https://biocyc.org/intro.shtml",
+  "api_docs": "https://biocyc.org/web-services.shtml",
+  "references": ["PMID:33166981", "PMID:31544903"],
+  "funding": "NIH, DOE",
+  "use_cases": [
+    "Comparative metabolism analysis",
+    "Systems biology modeling",
+    "Omics data integration"
+  ],
+  "integrates": ["MetaCyc"],
+  "related_to": ["MetaCyc", "KEGG"],
+  "database_type": "integrative_meta_database"
+}

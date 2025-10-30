@@ -1,0 +1,32 @@
+{
+  "name": "Orphanet",
+  "abbreviation": "Orphanet",
+  "url": "https://www.orpha.net",
+  "description": "Orphanet is a European reference portal for information on rare diseases and orphan drugs. It provides high-quality information on rare diseases, clinical trials, medicinal products, expert resources, and patient organizations.",
+  "category": "clinical-medical",
+  "subcategories": ["rare-diseases", "genetic-diseases"],
+  "data_types": [
+    "rare disease information",
+    "disease classification",
+    "epidemiology",
+    "clinical descriptions",
+    "expert centers",
+    "patient organizations"
+  ],
+  "access": ["web", "API", "download"],
+  "license": "Creative Commons BY-ND 4.0",
+  "organism": "Human",
+  "format": ["XML", "RDF", "OWL"],
+  "updated": "Regular updates",
+  "documentation": "https://www.orpha.net/consor/cgi-bin/Education_AboutOrphanet.php",
+  "api_docs": "https://www.orpha.net/orphacom/cahiers/docs/GB/Webservices_guidelines.pdf",
+  "references": ["PMID:32069271"],
+  "funding": "European Commission, French Ministry of Health",
+  "use_cases": [
+    "Rare disease diagnosis",
+    "Clinical decision support",
+    "Patient advocacy resources"
+  ],
+  "related_to": ["OMIM", "ClinVar"],
+  "database_type": "curated_knowledgebase"
+}

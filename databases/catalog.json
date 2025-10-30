@@ -1,13 +1,114 @@
 {
   "version": "1.0.0",
-  "last_updated": "2025-10-24",
-  "total_databases": 19,
+  "last_updated": "2025-10-30",
+  "total_databases": 55,
   "categories": {
     "clinical-medical": {
       "name": "Clinical & Medical",
       "description": "Disease data, clinical trials, phenotypes, and medical genetics",
-      "count": 1,
+      "count": 6,
       "databases": [
+        {
+          "name": "Catalogue of Somatic Mutations in Cancer",
+          "abbreviation": "COSMIC",
+          "url": "https://cancer.sanger.ac.uk/cosmic",
+          "description": "COSMIC is the world's largest and most comprehensive resource for exploring the impact of somatic mutations in human cancer. It contains manually curated data from the scientific literature and large-scale sequencing projects.",
+          "category": "clinical-medical",
+          "subcategories": [
+            "cancer-genomics"
+          ],
+          "data_types": [
+            "somatic mutations",
+            "copy number variants",
+            "gene fusions",
+            "cancer gene census",
+            "drug resistance mutations"
+          ],
+          "access": [
+            "web",
+            "download"
+          ],
+          "license": "Free for academic use, license required for commercial use",
+          "organism": "Human",
+          "format": [
+            "VCF",
+            "TSV",
+            "CSV"
+          ],
+          "updated": "Regular releases",
+          "documentation": "https://cancer.sanger.ac.uk/cosmic/help",
+          "references": [
+            "PMID:30371878",
+            "PMID:28596308"
+          ],
+          "funding": "Wellcome Trust Sanger Institute",
+          "use_cases": [
+            "Cancer mutation analysis",
+            "Clinical variant interpretation",
+            "Drug resistance research"
+          ],
+          "curated_from": [
+            "TCGA",
+            "ICGC"
+          ],
+          "related_to": [
+            "TCGA",
+            "cBioPortal",
+            "ClinVar"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
+        {
+          "name": "cBio Cancer Genomics Portal",
+          "abbreviation": "cBioPortal",
+          "url": "https://www.cbioportal.org",
+          "description": "cBioPortal is an open-access resource for interactive exploration of multidimensional cancer genomics data sets. It provides visualization, analysis, and download of large-scale cancer genomics data from multiple studies.",
+          "category": "clinical-medical",
+          "subcategories": [
+            "cancer-genomics"
+          ],
+          "data_types": [
+            "somatic mutations",
+            "copy number alterations",
+            "gene expression",
+            "DNA methylation",
+            "protein expression",
+            "clinical annotations"
+          ],
+          "access": [
+            "web",
+            "API"
+          ],
+          "license": "Open source (LGPL v3)",
+          "organism": "Human",
+          "format": [
+            "JSON",
+            "TSV"
+          ],
+          "updated": "Regular updates with new studies",
+          "documentation": "https://docs.cbioportal.org",
+          "api_docs": "https://www.cbioportal.org/api/swagger-ui/",
+          "references": [
+            "PMID:34019800",
+            "PMID:23550210"
+          ],
+          "funding": "NCI, Memorial Sloan Kettering Cancer Center",
+          "use_cases": [
+            "Cancer genomics data visualization",
+            "Multi-omics data integration",
+            "Clinical correlation analysis"
+          ],
+          "integrates": [
+            "TCGA",
+            "ICGC",
+            "COSMIC"
+          ],
+          "related_to": [
+            "TCGA",
+            "COSMIC"
+          ],
+          "database_type": "integrative_meta_database"
+        },
         {
           "name": "ClinVar",
           "abbreviation": "ClinVar",
@@ -53,14 +154,363 @@
             "Clinical genomics research",
             "Precision medicine applications"
           ]
+        },
+        {
+          "name": "Online Mendelian Inheritance in Man",
+          "abbreviation": "OMIM",
+          "url": "https://www.omim.org",
+          "description": "OMIM is a comprehensive, authoritative compendium of human genes and genetic phenotypes. It contains information on all known Mendelian disorders and over 16,000 genes, with a focus on the relationship between phenotype and genotype.",
+          "category": "clinical-medical",
+          "subcategories": [
+            "genetic-diseases",
+            "medical-genetics"
+          ],
+          "data_types": [
+            "genetic disorders",
+            "gene-phenotype relationships",
+            "disease descriptions",
+            "genetic variants",
+            "inheritance patterns"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download"
+          ],
+          "license": "Free for individual use, license required for redistribution",
+          "organism": "Human",
+          "format": [
+            "TXT",
+            "JSON"
+          ],
+          "updated": "Daily updates",
+          "documentation": "https://www.omim.org/help",
+          "api_docs": "https://www.omim.org/help/api",
+          "references": [
+            "PMID:30445645",
+            "PMID:28654725"
+          ],
+          "funding": "NHGRI, NIH",
+          "use_cases": [
+            "Clinical variant interpretation",
+            "Genetic disease research",
+            "Gene-disease association discovery"
+          ],
+          "related_to": [
+            "ClinVar",
+            "Orphanet",
+            "GTR"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
+        {
+          "name": "Orphanet",
+          "abbreviation": "Orphanet",
+          "url": "https://www.orpha.net",
+          "description": "Orphanet is a European reference portal for information on rare diseases and orphan drugs. It provides high-quality information on rare diseases, clinical trials, medicinal products, expert resources, and patient organizations.",
+          "category": "clinical-medical",
+          "subcategories": [
+            "rare-diseases",
+            "genetic-diseases"
+          ],
+          "data_types": [
+            "rare disease information",
+            "disease classification",
+            "epidemiology",
+            "clinical descriptions",
+            "expert centers",
+            "patient organizations"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download"
+          ],
+          "license": "Creative Commons BY-ND 4.0",
+          "organism": "Human",
+          "format": [
+            "XML",
+            "RDF",
+            "OWL"
+          ],
+          "updated": "Regular updates",
+          "documentation": "https://www.orpha.net/consor/cgi-bin/Education_AboutOrphanet.php",
+          "api_docs": "https://www.orpha.net/orphacom/cahiers/docs/GB/Webservices_guidelines.pdf",
+          "references": [
+            "PMID:32069271"
+          ],
+          "funding": "European Commission, French Ministry of Health",
+          "use_cases": [
+            "Rare disease diagnosis",
+            "Clinical decision support",
+            "Patient advocacy resources"
+          ],
+          "related_to": [
+            "OMIM",
+            "ClinVar"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
+        {
+          "name": "The Cancer Genome Atlas",
+          "abbreviation": "TCGA",
+          "url": "https://www.cancer.gov/ccg/research/genome-sequencing/tcga",
+          "description": "The Cancer Genome Atlas is a landmark cancer genomics program that molecularly characterized over 20,000 primary cancer and matched normal samples spanning 33 cancer types. It generated over 2.5 petabytes of genomic, epigenomic, transcriptomic, and proteomic data.",
+          "category": "clinical-medical",
+          "subcategories": [
+            "cancer-genomics",
+            "omics-data"
+          ],
+          "data_types": [
+            "somatic mutations",
+            "copy number variations",
+            "gene expression",
+            "DNA methylation",
+            "protein expression",
+            "clinical data"
+          ],
+          "access": [
+            "web",
+            "download"
+          ],
+          "license": "Open access with controlled access for some data",
+          "organism": "Human",
+          "format": [
+            "MAF",
+            "VCF",
+            "BAM",
+            "TSV"
+          ],
+          "updated": "Completed (legacy data maintained)",
+          "documentation": "https://www.cancer.gov/ccg/research/genome-sequencing/tcga/using-tcga",
+          "references": [
+            "PMID:23934186",
+            "PMID:29625048"
+          ],
+          "funding": "NCI, NHGRI, NIH",
+          "use_cases": [
+            "Cancer genomics research",
+            "Biomarker discovery",
+            "Therapeutic target identification"
+          ],
+          "related_to": [
+            "cBioPortal",
+            "COSMIC",
+            "GDC"
+          ],
+          "database_type": "primary_archive"
         }
       ]
+    },
+    "epigenomics": {
+      "name": "Epigenomics",
+      "description": "Databases in the epigenomics category",
+      "count": 0,
+      "databases": []
     },
     "genomics": {
       "name": "Genomics",
       "description": "Genome sequences, variations, annotations, and comparative genomics",
-      "count": 7,
+      "count": 18,
       "databases": [
+        {
+          "name": "ArrayExpress",
+          "abbreviation": "ArrayExpress",
+          "url": "https://www.ebi.ac.uk/arrayexpress",
+          "description": "ArrayExpress is a database of functional genomics experiments that stores data from high-throughput functional genomics experiments. It includes gene expression data from microarray and sequencing platforms.",
+          "category": "genomics",
+          "subcategories": [
+            "functional-genomics"
+          ],
+          "data_types": [
+            "gene expression data",
+            "microarray data",
+            "RNA-seq data",
+            "ChIP-seq data",
+            "methylation data"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access",
+          "organism": "All organisms",
+          "format": [
+            "MAGE-TAB",
+            "FASTQ",
+            "CEL",
+            "BAM"
+          ],
+          "updated": "Regular updates",
+          "documentation": "https://www.ebi.ac.uk/arrayexpress/help/index.html",
+          "api_docs": "https://www.ebi.ac.uk/arrayexpress/help/programmatic_access.html",
+          "references": [
+            "PMID:25361974"
+          ],
+          "funding": "EMBL-EBI",
+          "parent": "EMBL-EBI",
+          "use_cases": [
+            "Gene expression meta-analysis",
+            "Transcriptomics data mining",
+            "Comparative expression analysis"
+          ],
+          "data_type_analog": "GEO",
+          "related_to": [
+            "GEO",
+            "ENA"
+          ],
+          "database_type": "primary_archive"
+        },
+        {
+          "name": "BLUEPRINT Epigenome",
+          "abbreviation": "BLUEPRINT",
+          "url": "https://www.blueprint-epigenome.eu",
+          "description": "BLUEPRINT is a European project that aims to generate at least 100 reference epigenomes from distinct types of hematopoietic cells from healthy individuals and their malignant leukemic counterparts. It provides comprehensive epigenomic data for blood cell types.",
+          "category": "genomics",
+          "subcategories": [
+            "epigenomics",
+            "hematology"
+          ],
+          "data_types": [
+            "histone modifications",
+            "DNA methylation",
+            "chromatin accessibility",
+            "RNA expression",
+            "transcription factor binding"
+          ],
+          "access": [
+            "web",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access",
+          "organism": "Human",
+          "format": [
+            "bigWig",
+            "BED",
+            "BAM",
+            "VCF"
+          ],
+          "updated": "Completed (data maintained)",
+          "documentation": "https://www.blueprint-epigenome.eu/index.cfm?p=7BF8A4B6-F4FE-861A-2AD57A08D63D0B58",
+          "references": [
+            "PMID:27863252"
+          ],
+          "funding": "European Commission FP7",
+          "use_cases": [
+            "Blood cell epigenomics",
+            "Leukemia research",
+            "Hematopoietic differentiation"
+          ],
+          "member_of": [
+            "IHEC"
+          ],
+          "related_to": [
+            "ENCODE",
+            "Roadmap Epigenomics"
+          ],
+          "database_type": "primary_archive"
+        },
+        {
+          "name": "DNA Data Bank of Japan",
+          "abbreviation": "DDBJ",
+          "url": "https://www.ddbj.nig.ac.jp",
+          "description": "The DNA Data Bank of Japan is one of the three partners of the International Nucleotide Sequence Database Collaboration (INSDC), along with GenBank and ENA. DDBJ collects and provides public access to nucleotide sequence data and related information.",
+          "category": "genomics",
+          "subcategories": [
+            "nucleotide-archives"
+          ],
+          "data_types": [
+            "nucleotide sequences",
+            "genome sequences",
+            "RNA sequences",
+            "raw sequencing reads"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access (public domain)",
+          "organism": "All organisms",
+          "format": [
+            "FASTA",
+            "GenBank",
+            "EMBL",
+            "DDBJ",
+            "FASTQ"
+          ],
+          "updated": "Daily synchronization with INSDC partners",
+          "documentation": "https://www.ddbj.nig.ac.jp/ddbj/index-e.html",
+          "api_docs": "https://www.ddbj.nig.ac.jp/services-e.html",
+          "references": [
+            "PMID:33156333"
+          ],
+          "funding": "National Institute of Genetics, Japan",
+          "use_cases": [
+            "Nucleotide sequence submission and retrieval",
+            "Comparative genomics",
+            "Phylogenetic analysis"
+          ],
+          "member_of": [
+            "INSDC"
+          ],
+          "mirrors": [
+            "GenBank",
+            "ENA"
+          ],
+          "database_type": "primary_archive"
+        },
+        {
+          "name": "Encyclopedia of DNA Elements",
+          "abbreviation": "ENCODE",
+          "url": "https://www.encodeproject.org",
+          "description": "ENCODE is a comprehensive catalog of functional elements in the human and model organism genomes. The project aims to identify all functional elements including genes, transcripts, and regulatory regions.",
+          "category": "genomics",
+          "subcategories": [
+            "functional-genomics",
+            "epigenomics"
+          ],
+          "data_types": [
+            "transcription factor binding sites",
+            "chromatin accessibility",
+            "histone modifications",
+            "DNA methylation",
+            "RNA expression",
+            "chromatin interactions"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access",
+          "organism": "Human, mouse, and other model organisms",
+          "format": [
+            "BAM",
+            "BED",
+            "bigWig",
+            "FASTQ"
+          ],
+          "updated": "Regular releases",
+          "documentation": "https://www.encodeproject.org/help/",
+          "api_docs": "https://www.encodeproject.org/help/rest-api/",
+          "references": [
+            "PMID:32728249",
+            "PMID:22955616"
+          ],
+          "funding": "NHGRI, NIH",
+          "use_cases": [
+            "Regulatory element annotation",
+            "Transcription factor analysis",
+            "Epigenomic profiling"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
         {
           "name": "Ensembl",
           "abbreviation": "Ensembl",
@@ -237,6 +687,56 @@
           "database_type": "primary_archive"
         },
         {
+          "name": "GENCODE",
+          "abbreviation": "GENCODE",
+          "url": "https://www.gencodegenes.org",
+          "description": "GENCODE produces high-quality reference gene annotation for human and mouse genomes. It is the default gene annotation for the human genome used by the Ensembl and UCSC Genome Browsers.",
+          "category": "genomics",
+          "subcategories": [
+            "gene-annotation"
+          ],
+          "data_types": [
+            "gene annotations",
+            "transcript annotations",
+            "protein-coding genes",
+            "lncRNAs",
+            "pseudogenes"
+          ],
+          "access": [
+            "web",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access",
+          "organism": "Human, mouse",
+          "format": [
+            "GTF",
+            "GFF3",
+            "FASTA"
+          ],
+          "updated": "Regular releases",
+          "documentation": "https://www.gencodegenes.org/pages/documentation.html",
+          "references": [
+            "PMID:33270111",
+            "PMID:22955987"
+          ],
+          "funding": "NHGRI, NIH, Wellcome Trust",
+          "use_cases": [
+            "Gene annotation",
+            "RNA-seq analysis",
+            "Variant interpretation"
+          ],
+          "integrates": [
+            "Ensembl",
+            "UCSC Genome Browser"
+          ],
+          "related_to": [
+            "RefSeq",
+            "Ensembl"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
+        {
           "name": "Gene Expression Omnibus",
           "abbreviation": "GEO",
           "url": "https://www.ncbi.nlm.nih.gov/geo",
@@ -284,6 +784,96 @@
             "Data reanalysis and validation",
             "Machine learning on transcriptomics data"
           ]
+        },
+        {
+          "name": "Genome Aggregation Database",
+          "abbreviation": "gnomAD",
+          "url": "https://gnomad.broadinstitute.org",
+          "description": "The Genome Aggregation Database is a resource developed by an international coalition of investigators that aggregates and harmonizes exome and genome sequencing data from a variety of large-scale sequencing projects.",
+          "category": "genomics",
+          "subcategories": [
+            "genetic-variation"
+          ],
+          "data_types": [
+            "genetic variants",
+            "allele frequencies",
+            "population genetics data",
+            "structural variants"
+          ],
+          "access": [
+            "web",
+            "download"
+          ],
+          "license": "Open access (ODC Open Database License)",
+          "organism": "Human",
+          "format": [
+            "VCF",
+            "Hail MatrixTable"
+          ],
+          "updated": "Periodic major releases",
+          "documentation": "https://gnomad.broadinstitute.org/help",
+          "references": [
+            "PMID:32461654",
+            "PMID:27535533"
+          ],
+          "funding": "NHGRI, NIH, Broad Institute",
+          "use_cases": [
+            "Variant filtering and interpretation",
+            "Population genetics research",
+            "Clinical variant classification"
+          ],
+          "related_to": [
+            "dbSNP",
+            "ClinVar",
+            "ExAC"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
+        {
+          "name": "miRBase",
+          "abbreviation": "miRBase",
+          "url": "https://www.mirbase.org",
+          "description": "miRBase is the primary online repository for miRNA sequences and annotation. It provides a comprehensive searchable database of published miRNA sequences and annotations with information on genomic location and predicted targets.",
+          "category": "genomics",
+          "subcategories": [
+            "rna-databases",
+            "non-coding-rna"
+          ],
+          "data_types": [
+            "miRNA sequences",
+            "miRNA annotations",
+            "genomic locations",
+            "precursor sequences",
+            "mature sequences"
+          ],
+          "access": [
+            "web",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access",
+          "organism": "271 organisms",
+          "format": [
+            "FASTA",
+            "GFF",
+            "EMBL"
+          ],
+          "updated": "Periodic updates",
+          "documentation": "https://www.mirbase.org/help/",
+          "references": [
+            "PMID:30423142",
+            "PMID:28645171"
+          ],
+          "funding": "BBSRC, Wellcome Trust",
+          "use_cases": [
+            "miRNA identification",
+            "Target prediction",
+            "miRNA expression analysis"
+          ],
+          "integrates": [
+            "RNAcentral"
+          ],
+          "database_type": "curated_knowledgebase"
         },
         {
           "name": "NCBI RefSeq",
@@ -338,6 +928,214 @@
             "GenBank"
           ],
           "database_type": "curated_knowledgebase"
+        },
+        {
+          "name": "NIH Roadmap Epigenomics Mapping Consortium",
+          "abbreviation": "Roadmap Epigenomics",
+          "url": "http://www.roadmapepigenomics.org",
+          "description": "The NIH Roadmap Epigenomics Mapping Consortium produced a public resource of human epigenomic data including reference epigenome maps for stem cells and primary ex vivo tissues. It includes integrative analysis of 111 reference human epigenomes.",
+          "category": "genomics",
+          "subcategories": [
+            "epigenomics",
+            "functional-genomics"
+          ],
+          "data_types": [
+            "histone modifications",
+            "DNA methylation",
+            "chromatin accessibility",
+            "RNA expression",
+            "enhancer annotations"
+          ],
+          "access": [
+            "web",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access",
+          "organism": "Human",
+          "format": [
+            "bigWig",
+            "BED",
+            "BAM"
+          ],
+          "updated": "Completed (legacy data maintained)",
+          "documentation": "http://www.roadmapepigenomics.org/overview",
+          "references": [
+            "PMID:25693563",
+            "PMID:25693564"
+          ],
+          "funding": "NIH Common Fund",
+          "use_cases": [
+            "Epigenome annotation",
+            "Regulatory element identification",
+            "Disease epigenetics"
+          ],
+          "member_of": [
+            "IHEC"
+          ],
+          "related_to": [
+            "ENCODE",
+            "BLUEPRINT"
+          ],
+          "database_type": "primary_archive"
+        },
+        {
+          "name": "Rfam",
+          "abbreviation": "Rfam",
+          "url": "https://rfam.org",
+          "description": "Rfam is a database of RNA families represented by multiple sequence alignments, consensus secondary structures, and covariance models. It provides comprehensive annotation of non-coding RNA families.",
+          "category": "genomics",
+          "subcategories": [
+            "rna-databases",
+            "non-coding-rna"
+          ],
+          "data_types": [
+            "RNA families",
+            "RNA secondary structures",
+            "covariance models",
+            "RNA alignments",
+            "RNA motifs"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Creative Commons Zero (CC0)",
+          "organism": "All organisms",
+          "format": [
+            "Stockholm",
+            "FASTA",
+            "Newick"
+          ],
+          "updated": "Regular releases",
+          "documentation": "https://rfam.readthedocs.io/",
+          "api_docs": "https://rfam.readthedocs.io/en/latest/api.html",
+          "references": [
+            "PMID:33211869",
+            "PMID:29112718"
+          ],
+          "funding": "BBSRC, Wellcome Trust, EMBL-EBI",
+          "use_cases": [
+            "RNA family classification",
+            "RNA structure prediction",
+            "Genome annotation"
+          ],
+          "integrates": [
+            "RNAcentral"
+          ],
+          "related_to": [
+            "Pfam",
+            "InterPro"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
+        {
+          "name": "RNAcentral",
+          "abbreviation": "RNAcentral",
+          "url": "https://rnacentral.org",
+          "description": "RNAcentral is a comprehensive database of non-coding RNA sequences that provides a single access point to 44 RNA resources and over 18 million ncRNA sequences from a wide range of organisms and RNA types.",
+          "category": "genomics",
+          "subcategories": [
+            "rna-databases",
+            "non-coding-rna"
+          ],
+          "data_types": [
+            "non-coding RNA sequences",
+            "lncRNA",
+            "miRNA",
+            "tRNA",
+            "rRNA",
+            "snoRNA",
+            "piRNA",
+            "snRNA"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access",
+          "organism": "All organisms",
+          "format": [
+            "FASTA",
+            "JSON",
+            "GFF",
+            "BED"
+          ],
+          "updated": "Regular releases",
+          "documentation": "https://rnacentral.org/help",
+          "api_docs": "https://rnacentral.org/api",
+          "references": [
+            "PMID:33325481",
+            "PMID:30395267"
+          ],
+          "funding": "BBSRC, Wellcome Trust, EMBL-EBI",
+          "use_cases": [
+            "Non-coding RNA identification",
+            "RNA sequence annotation",
+            "Comparative RNA genomics"
+          ],
+          "integrates": [
+            "miRBase",
+            "lncRNAdb",
+            "GtRNAdb",
+            "Rfam"
+          ],
+          "database_type": "integrative_meta_database"
+        },
+        {
+          "name": "Sequence Read Archive",
+          "abbreviation": "SRA",
+          "url": "https://www.ncbi.nlm.nih.gov/sra",
+          "description": "The Sequence Read Archive is NCBI's primary archive of high-throughput sequencing data. SRA stores raw sequencing data and alignment information from next-generation sequencing platforms.",
+          "category": "genomics",
+          "subcategories": [
+            "functional-genomics"
+          ],
+          "data_types": [
+            "raw sequencing reads",
+            "RNA-seq data",
+            "ChIP-seq data",
+            "WGS data",
+            "exome sequencing"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP",
+            "CLI"
+          ],
+          "license": "Open access (public domain)",
+          "organism": "All organisms",
+          "format": [
+            "FASTQ",
+            "SRA",
+            "BAM",
+            "CRAM"
+          ],
+          "updated": "Daily updates",
+          "documentation": "https://www.ncbi.nlm.nih.gov/sra/docs/",
+          "api_docs": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+          "references": [
+            "PMID:21062823"
+          ],
+          "funding": "NCBI, NLM, NIH",
+          "contact": "sra@ncbi.nlm.nih.gov",
+          "use_cases": [
+            "Raw sequencing data access",
+            "Reanalysis of published sequencing experiments",
+            "Method development and validation"
+          ],
+          "related_to": [
+            "GEO",
+            "ENA"
+          ],
+          "parent": "NCBI",
+          "database_type": "primary_archive"
         },
         {
           "name": "Single Nucleotide Polymorphism Database",
@@ -508,8 +1306,62 @@
     "metabolomics": {
       "name": "Metabolomics",
       "description": "Metabolites, metabolic pathways, and biochemical reactions",
-      "count": 2,
+      "count": 6,
       "databases": [
+        {
+          "name": "Chemical Entities of Biological Interest",
+          "abbreviation": "ChEBI",
+          "url": "https://www.ebi.ac.uk/chebi",
+          "description": "ChEBI is a dictionary of molecular entities focused on small chemical compounds. It provides a comprehensive resource of chemical entities of biological interest with ontological classification and structural information.",
+          "category": "metabolomics",
+          "subcategories": [
+            "chemical-databases",
+            "ontologies"
+          ],
+          "data_types": [
+            "chemical structures",
+            "chemical ontology",
+            "molecular formulas",
+            "chemical properties",
+            "biological roles"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access (CC BY 4.0)",
+          "organism": "All organisms",
+          "format": [
+            "SDF",
+            "MOL",
+            "InChI",
+            "SMILES",
+            "OBO",
+            "OWL"
+          ],
+          "updated": "Monthly updates",
+          "documentation": "https://www.ebi.ac.uk/chebi/aboutChebiForward.do",
+          "api_docs": "https://www.ebi.ac.uk/chebi/webServices.do",
+          "references": [
+            "PMID:36349046",
+            "PMID:26467479"
+          ],
+          "funding": "EMBL-EBI, BBSRC",
+          "parent": "EMBL-EBI",
+          "use_cases": [
+            "Chemical entity annotation",
+            "Ontology-based data integration",
+            "Metabolite identification"
+          ],
+          "related_to": [
+            "PubChem",
+            "ChemSpider",
+            "HMDB"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
         {
           "name": "DrugBank",
           "abbreviation": "DrugBank",
@@ -558,6 +1410,148 @@
             "ChEMBL",
             "PubChem",
             "UniProt"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
+        {
+          "name": "Human Metabolome Database",
+          "abbreviation": "HMDB",
+          "url": "https://hmdb.ca",
+          "description": "The Human Metabolome Database is a comprehensive, high-quality, freely accessible, online database of small molecule metabolites found in the human body. It contains over 220,000 metabolite entries including both water-soluble and lipid-soluble metabolites.",
+          "category": "metabolomics",
+          "subcategories": [
+            "metabolite-databases"
+          ],
+          "data_types": [
+            "metabolite structures",
+            "metabolite concentrations",
+            "metabolite locations",
+            "disease associations",
+            "pathways",
+            "MS/NMR spectra"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download"
+          ],
+          "license": "Open access with attribution",
+          "organism": "Human",
+          "format": [
+            "XML",
+            "CSV",
+            "SDF"
+          ],
+          "updated": "Regular updates",
+          "documentation": "https://hmdb.ca/about",
+          "api_docs": "https://hmdb.ca/api",
+          "references": [
+            "PMID:34986597",
+            "PMID:29140435"
+          ],
+          "funding": "Genome Canada, Canadian Institutes of Health Research",
+          "use_cases": [
+            "Metabolite identification",
+            "Metabolomics data analysis",
+            "Disease biomarker discovery"
+          ],
+          "related_to": [
+            "METLIN",
+            "MetaboLights"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
+        {
+          "name": "MetaboLights",
+          "abbreviation": "MetaboLights",
+          "url": "https://www.ebi.ac.uk/metabolights",
+          "description": "MetaboLights is a database for metabolomics experiments and derived information. It provides a repository for metabolomics data including raw spectral data, metadata, and protocols following community standards.",
+          "category": "metabolomics",
+          "subcategories": [
+            "metabolomics-experiments"
+          ],
+          "data_types": [
+            "NMR data",
+            "mass spectrometry data",
+            "metabolite quantification",
+            "experimental metadata",
+            "protocols"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access",
+          "organism": "All organisms",
+          "format": [
+            "mzML",
+            "nmrML",
+            "ISA-Tab"
+          ],
+          "updated": "Regular updates",
+          "documentation": "https://www.ebi.ac.uk/metabolights/about",
+          "api_docs": "https://www.ebi.ac.uk/metabolights/webservice",
+          "references": [
+            "PMID:31691833",
+            "PMID:27899658"
+          ],
+          "funding": "EMBL-EBI, BBSRC",
+          "parent": "EMBL-EBI",
+          "use_cases": [
+            "Metabolomics data submission",
+            "Reanalysis of published metabolomics studies",
+            "Method validation and benchmarking"
+          ],
+          "data_type_analog": "GEO",
+          "related_to": [
+            "Metabolomics Workbench",
+            "HMDB"
+          ],
+          "database_type": "primary_archive"
+        },
+        {
+          "name": "METLIN Metabolite Database",
+          "abbreviation": "METLIN",
+          "url": "https://metlin.scripps.edu",
+          "description": "METLIN is a metabolite mass spectral database containing over 960,000 compounds. It provides tandem mass spectrometry (MS/MS) data and is widely used for metabolite identification in untargeted metabolomics experiments.",
+          "category": "metabolomics",
+          "subcategories": [
+            "metabolite-databases"
+          ],
+          "data_types": [
+            "mass spectra",
+            "MS/MS spectra",
+            "metabolite structures",
+            "retention times",
+            "collision cross sections"
+          ],
+          "access": [
+            "web"
+          ],
+          "license": "Free for academic use, subscription for commercial use",
+          "organism": "All organisms",
+          "format": [
+            "MGF",
+            "MSP"
+          ],
+          "updated": "Regular updates",
+          "documentation": "https://metlin.scripps.edu/landing_page.php?pgcontent=help",
+          "references": [
+            "PMID:35143633",
+            "PMID:22135287"
+          ],
+          "funding": "NIH, Scripps Research",
+          "use_cases": [
+            "Metabolite identification from mass spectrometry",
+            "Untargeted metabolomics",
+            "Tandem MS library matching"
+          ],
+          "related_to": [
+            "HMDB",
+            "mzCloud",
+            "MassBank"
           ],
           "database_type": "curated_knowledgebase"
         },
@@ -613,6 +1607,319 @@
             "HMDB"
           ],
           "database_type": "primary_archive"
+        }
+      ]
+    },
+    "model-organisms": {
+      "name": "Model Organisms",
+      "description": "Databases in the model-organisms category",
+      "count": 6,
+      "databases": [
+        {
+          "name": "FlyBase",
+          "abbreviation": "FlyBase",
+          "url": "https://flybase.org",
+          "description": "FlyBase is a comprehensive database for Drosophila genetics and molecular biology. It includes data on genes, alleles, phenotypes, genetic and physical interactions, reagents, sequences, genetic maps, expression, images, and literature.",
+          "category": "model-organisms",
+          "subcategories": [
+            "insects",
+            "genomics"
+          ],
+          "data_types": [
+            "genome sequences",
+            "gene annotations",
+            "alleles",
+            "phenotypes",
+            "genetic interactions",
+            "expression data",
+            "stocks and reagents"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access",
+          "organism": "Drosophila melanogaster and related species",
+          "format": [
+            "GFF",
+            "FASTA",
+            "GAF",
+            "TSV"
+          ],
+          "updated": "Regular releases",
+          "documentation": "https://flybase.org/wiki/FlyBase:About",
+          "api_docs": "https://flybase.org/wiki/FlyBase:API",
+          "references": [
+            "PMID:34791371",
+            "PMID:33219671"
+          ],
+          "funding": "NHGRI, NIH, BBSRC, MRC",
+          "use_cases": [
+            "Drosophila genetics",
+            "Developmental biology",
+            "Disease model research"
+          ],
+          "member_of": [
+            "Alliance of Genome Resources"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
+        {
+          "name": "Mouse Genome Informatics",
+          "abbreviation": "MGI",
+          "url": "https://www.informatics.jax.org",
+          "description": "MGI is the international database resource for the laboratory mouse, providing integrated genetic, genomic, and biological data to facilitate the study of human health and disease. It is a comprehensive resource for mouse genetics and genomics.",
+          "category": "model-organisms",
+          "subcategories": [
+            "mammals",
+            "genomics"
+          ],
+          "data_types": [
+            "genome sequences",
+            "gene annotations",
+            "phenotypes",
+            "human disease models",
+            "gene expression",
+            "alleles and mutations"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access",
+          "organism": "Mus musculus (laboratory mouse)",
+          "format": [
+            "GFF",
+            "FASTA",
+            "GAF",
+            "TSV"
+          ],
+          "updated": "Weekly updates",
+          "documentation": "https://www.informatics.jax.org/userhelp/",
+          "api_docs": "https://www.informatics.jax.org/downloads/reports/",
+          "references": [
+            "PMID:34850941",
+            "PMID:33231642"
+          ],
+          "funding": "NHGRI, NIH, The Jackson Laboratory",
+          "use_cases": [
+            "Mouse genetics research",
+            "Human disease modeling",
+            "Comparative genomics"
+          ],
+          "member_of": [
+            "Alliance of Genome Resources"
+          ],
+          "related_to": [
+            "Ensembl",
+            "NCBI Gene"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
+        {
+          "name": "Rat Genome Database",
+          "abbreviation": "RGD",
+          "url": "https://rgd.mcw.edu",
+          "description": "RGD is a collaborative effort between leading rat researchers and bioinformaticians to collect, consolidate, and integrate rat genomic and phenotype data. It provides tools and resources for rat, mouse, and human comparative genomics.",
+          "category": "model-organisms",
+          "subcategories": [
+            "mammals",
+            "genomics"
+          ],
+          "data_types": [
+            "genome sequences",
+            "gene annotations",
+            "QTLs",
+            "strains",
+            "phenotypes",
+            "disease models",
+            "pathways"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access",
+          "organism": "Rattus norvegicus (rat), with mouse and human data",
+          "format": [
+            "GFF",
+            "FASTA",
+            "GAF",
+            "VCF"
+          ],
+          "updated": "Regular updates",
+          "documentation": "https://rgd.mcw.edu/wg/help",
+          "api_docs": "https://rgd.mcw.edu/wg/webservice/",
+          "references": [
+            "PMID:34850957",
+            "PMID:33231639"
+          ],
+          "funding": "NHGRI, NHLBI, NIH",
+          "use_cases": [
+            "Rat genetics research",
+            "Disease model studies",
+            "Comparative mammalian genomics"
+          ],
+          "member_of": [
+            "Alliance of Genome Resources"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
+        {
+          "name": "Saccharomyces Genome Database",
+          "abbreviation": "SGD",
+          "url": "https://www.yeastgenome.org",
+          "description": "SGD is a scientific database of the molecular biology and genetics of the yeast Saccharomyces cerevisiae. It provides comprehensive integrated biological information for budding yeast along with search and analysis tools.",
+          "category": "model-organisms",
+          "subcategories": [
+            "fungi",
+            "genomics"
+          ],
+          "data_types": [
+            "genome sequences",
+            "gene annotations",
+            "protein data",
+            "phenotypes",
+            "interactions",
+            "literature"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access",
+          "organism": "Saccharomyces cerevisiae (budding yeast)",
+          "format": [
+            "GFF",
+            "FASTA",
+            "GAF",
+            "TSV"
+          ],
+          "updated": "Regular updates",
+          "documentation": "https://www.yeastgenome.org/help",
+          "api_docs": "https://www.yeastgenome.org/webservice",
+          "references": [
+            "PMID:34559834",
+            "PMID:22110037"
+          ],
+          "funding": "NHGRI, NIH",
+          "use_cases": [
+            "Yeast genetics research",
+            "Comparative genomics",
+            "Functional genomics studies"
+          ],
+          "member_of": [
+            "Alliance of Genome Resources"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
+        {
+          "name": "WormBase",
+          "abbreviation": "WormBase",
+          "url": "https://www.wormbase.org",
+          "description": "WormBase is an international consortium of biologists and computer scientists dedicated to providing the research community with accurate, current, accessible information concerning the genetics, genomics and biology of C. elegans and related nematodes.",
+          "category": "model-organisms",
+          "subcategories": [
+            "nematodes",
+            "genomics"
+          ],
+          "data_types": [
+            "genome sequences",
+            "gene annotations",
+            "genetic interactions",
+            "phenotypes",
+            "expression patterns",
+            "RNAi data"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access",
+          "organism": "Caenorhabditis elegans and related nematodes",
+          "format": [
+            "GFF",
+            "FASTA",
+            "ACE",
+            "GAF"
+          ],
+          "updated": "Regular releases",
+          "documentation": "https://www.wormbase.org/about/userguide",
+          "api_docs": "https://www.wormbase.org/about/userguide/for_developers",
+          "references": [
+            "PMID:34718740",
+            "PMID:31642470"
+          ],
+          "funding": "NHGRI, BBSRC, NIH",
+          "use_cases": [
+            "C. elegans research",
+            "Developmental biology",
+            "Neuroscience studies"
+          ],
+          "member_of": [
+            "Alliance of Genome Resources"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
+        {
+          "name": "Zebrafish Information Network",
+          "abbreviation": "ZFIN",
+          "url": "https://zfin.org",
+          "description": "ZFIN is the zebrafish model organism database that provides a wide array of expertly curated, organized and cross-referenced zebrafish research data. It serves as the central zebrafish genetics and genomics resource.",
+          "category": "model-organisms",
+          "subcategories": [
+            "fish",
+            "genomics"
+          ],
+          "data_types": [
+            "genome sequences",
+            "gene annotations",
+            "phenotypes",
+            "expression patterns",
+            "antibodies",
+            "morpholinos",
+            "anatomical ontology"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download"
+          ],
+          "license": "Open access",
+          "organism": "Danio rerio (zebrafish)",
+          "format": [
+            "GFF",
+            "FASTA",
+            "GAF",
+            "OBO"
+          ],
+          "updated": "Daily updates",
+          "documentation": "https://wiki.zfin.org/",
+          "api_docs": "https://zfin.org/downloads",
+          "references": [
+            "PMID:34791407",
+            "PMID:31905404"
+          ],
+          "funding": "NHGRI, NIH",
+          "use_cases": [
+            "Developmental biology",
+            "Disease modeling",
+            "Drug discovery"
+          ],
+          "member_of": [
+            "Alliance of Genome Resources"
+          ],
+          "database_type": "curated_knowledgebase"
         }
       ]
     },
@@ -674,8 +1981,160 @@
     "pathways": {
       "name": "Pathways",
       "description": "Databases in the pathways category",
-      "count": 3,
+      "count": 8,
       "databases": [
+        {
+          "name": "BioCyc",
+          "abbreviation": "BioCyc",
+          "url": "https://biocyc.org",
+          "description": "BioCyc is a collection of Pathway/Genome Databases for thousands of organisms. It includes organism-specific databases that contain curated metabolic pathways, regulatory networks, transporters, and other cellular functions.",
+          "category": "pathways",
+          "subcategories": [
+            "biological-pathways",
+            "metabolic-pathways"
+          ],
+          "data_types": [
+            "metabolic pathways",
+            "regulatory networks",
+            "genome annotations",
+            "enzymatic reactions",
+            "metabolites"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download"
+          ],
+          "license": "Free for academic use, subscription for commercial use",
+          "organism": "3000+ organisms",
+          "format": [
+            "BioPAX",
+            "SBML",
+            "Pathway Tools"
+          ],
+          "updated": "Regular updates",
+          "documentation": "https://biocyc.org/intro.shtml",
+          "api_docs": "https://biocyc.org/web-services.shtml",
+          "references": [
+            "PMID:33166981",
+            "PMID:31544903"
+          ],
+          "funding": "NIH, DOE",
+          "use_cases": [
+            "Comparative metabolism analysis",
+            "Systems biology modeling",
+            "Omics data integration"
+          ],
+          "integrates": [
+            "MetaCyc"
+          ],
+          "related_to": [
+            "MetaCyc",
+            "KEGG"
+          ],
+          "database_type": "integrative_meta_database"
+        },
+        {
+          "name": "Biological General Repository for Interaction Datasets",
+          "abbreviation": "BioGRID",
+          "url": "https://thebiogrid.org",
+          "description": "BioGRID is a biomedical interaction repository containing protein and genetic interactions, chemical associations, and post-translational modifications from major model organism species.",
+          "category": "pathways",
+          "subcategories": [
+            "molecular-interactions"
+          ],
+          "data_types": [
+            "protein-protein interactions",
+            "genetic interactions",
+            "chemical associations",
+            "post-translational modifications"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download"
+          ],
+          "license": "MIT License",
+          "organism": "70+ organisms",
+          "format": [
+            "TAB",
+            "PSI-MI",
+            "JSON"
+          ],
+          "updated": "Monthly updates",
+          "documentation": "https://wiki.thebiogrid.org/",
+          "api_docs": "https://wiki.thebiogrid.org/doku.php/biogridrest",
+          "references": [
+            "PMID:33237311",
+            "PMID:28605736"
+          ],
+          "funding": "NIH, Canadian Institutes of Health Research",
+          "use_cases": [
+            "Protein interaction network analysis",
+            "Genetic interaction studies",
+            "Systems biology research"
+          ],
+          "integrates": [
+            "STRING"
+          ],
+          "related_to": [
+            "STRING",
+            "IntAct",
+            "MINT"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
+        {
+          "name": "IntAct Molecular Interaction Database",
+          "abbreviation": "IntAct",
+          "url": "https://www.ebi.ac.uk/intact",
+          "description": "IntAct provides a freely available, open source database and toolkit for the storage, presentation and analysis of molecular interaction data. It is part of the International Molecular Exchange consortium.",
+          "category": "pathways",
+          "subcategories": [
+            "molecular-interactions"
+          ],
+          "data_types": [
+            "protein-protein interactions",
+            "protein-small molecule interactions",
+            "protein-nucleic acid interactions"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Apache License 2.0",
+          "organism": "All organisms",
+          "format": [
+            "PSI-MI",
+            "MITAB",
+            "JSON"
+          ],
+          "updated": "Regular updates",
+          "documentation": "https://www.ebi.ac.uk/intact/documentation",
+          "api_docs": "https://www.ebi.ac.uk/intact/documentation/webservices",
+          "references": [
+            "PMID:34761267",
+            "PMID:24234451"
+          ],
+          "funding": "EMBL-EBI, European Commission",
+          "parent": "EMBL-EBI",
+          "use_cases": [
+            "Protein interaction network construction",
+            "Drug target identification",
+            "Systems biology modeling"
+          ],
+          "member_of": [
+            "IMEx"
+          ],
+          "related_to": [
+            "STRING",
+            "BioGRID",
+            "MINT"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
         {
           "name": "Kyoto Encyclopedia of Genes and Genomes",
           "abbreviation": "KEGG",
@@ -721,6 +2180,52 @@
             "Drug discovery and development",
             "Comparative genomics"
           ]
+        },
+        {
+          "name": "MetaCyc",
+          "abbreviation": "MetaCyc",
+          "url": "https://metacyc.org",
+          "description": "MetaCyc is a curated database of experimentally elucidated metabolic pathways from all domains of life. It contains over 2,900 pathways from more than 3,000 organisms and is widely used for metabolic pathway prediction.",
+          "category": "pathways",
+          "subcategories": [
+            "biological-pathways",
+            "metabolic-pathways"
+          ],
+          "data_types": [
+            "metabolic pathways",
+            "enzymatic reactions",
+            "metabolites",
+            "enzymes",
+            "pathway diagrams"
+          ],
+          "access": [
+            "web",
+            "download"
+          ],
+          "license": "Free for academic use, license required for commercial use",
+          "organism": "All organisms",
+          "format": [
+            "BioPAX",
+            "SBML",
+            "Pathway Tools"
+          ],
+          "updated": "Regular updates (3-4 times per year)",
+          "documentation": "https://metacyc.org/intro.shtml",
+          "references": [
+            "PMID:33156326",
+            "PMID:31586394"
+          ],
+          "funding": "NIH, DOE",
+          "use_cases": [
+            "Metabolic pathway analysis",
+            "Genome annotation",
+            "Metabolic engineering"
+          ],
+          "related_to": [
+            "BioCyc",
+            "KEGG"
+          ],
+          "database_type": "curated_knowledgebase"
         },
         {
           "name": "Reactome",
@@ -828,13 +2333,68 @@
             "Reactome"
           ],
           "database_type": "integrative_meta_database"
+        },
+        {
+          "name": "WikiPathways",
+          "abbreviation": "WikiPathways",
+          "url": "https://www.wikipathways.org",
+          "description": "WikiPathways is an open, collaborative platform for biological pathway curation. It enables researchers to create, update, and share pathway diagrams in a wiki-based format with community contributions.",
+          "category": "pathways",
+          "subcategories": [
+            "biological-pathways"
+          ],
+          "data_types": [
+            "biological pathways",
+            "metabolic pathways",
+            "signaling pathways",
+            "disease pathways",
+            "pathway diagrams"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download"
+          ],
+          "license": "Creative Commons CC0",
+          "organism": "Multiple organisms",
+          "format": [
+            "GPML",
+            "BioPAX",
+            "SVG",
+            "PDF",
+            "PNG"
+          ],
+          "updated": "Continuous community updates",
+          "documentation": "https://www.wikipathways.org/help.html",
+          "api_docs": "https://www.wikipathways.org/api/",
+          "references": [
+            "PMID:34850161",
+            "PMID:28146670"
+          ],
+          "funding": "NRNB, Gladstone Institutes, Maastricht University",
+          "use_cases": [
+            "Pathway visualization",
+            "Community-based pathway curation",
+            "Omics data integration"
+          ],
+          "related_to": [
+            "Reactome",
+            "KEGG"
+          ],
+          "database_type": "curated_knowledgebase"
         }
       ]
+    },
+    "phylogenetics": {
+      "name": "Phylogenetics",
+      "description": "Databases in the phylogenetics category",
+      "count": 0,
+      "databases": []
     },
     "proteomics": {
       "name": "Proteomics",
       "description": "Protein sequences, structures, functions, and interactions",
-      "count": 4,
+      "count": 9,
       "databases": [
         {
           "name": "InterPro",
@@ -902,6 +2462,59 @@
           "database_type": "integrative_meta_database"
         },
         {
+          "name": "neXtProt",
+          "abbreviation": "neXtProt",
+          "url": "https://www.nextprot.org",
+          "description": "neXtProt is a comprehensive human-centric protein knowledge platform that integrates and disseminates protein-related information. It focuses on human proteins and includes extensive functional annotations, variants, and disease associations.",
+          "category": "proteomics",
+          "subcategories": [
+            "protein-sequences"
+          ],
+          "data_types": [
+            "protein sequences",
+            "protein isoforms",
+            "post-translational modifications",
+            "protein variants",
+            "protein functions",
+            "disease associations"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Creative Commons Attribution 4.0 International",
+          "organism": "Human",
+          "format": [
+            "XML",
+            "TXT",
+            "PEFF",
+            "TTL"
+          ],
+          "updated": "Regular releases (quarterly)",
+          "documentation": "https://www.nextprot.org/help",
+          "api_docs": "https://www.nextprot.org/help/api",
+          "references": [
+            "PMID:35243154",
+            "PMID:27899619"
+          ],
+          "funding": "Swiss Institute of Bioinformatics, SIB",
+          "use_cases": [
+            "Human protein functional annotation",
+            "Variant effect prediction",
+            "Biomarker discovery"
+          ],
+          "curated_from": [
+            "UniProtKB/Swiss-Prot"
+          ],
+          "related_to": [
+            "UniProt",
+            "Ensembl"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
+        {
           "name": "Pfam",
           "abbreviation": "Pfam",
           "url": "http://pfam.xfam.org/",
@@ -956,6 +2569,56 @@
           "database_type": "curated_knowledgebase"
         },
         {
+          "name": "PROSITE",
+          "abbreviation": "PROSITE",
+          "url": "https://prosite.expasy.org",
+          "description": "PROSITE is a database of protein families and domains that consists of entries describing protein domains, families and functional sites, as well as amino acid patterns and profiles to identify them.",
+          "category": "proteomics",
+          "subcategories": [
+            "protein-families"
+          ],
+          "data_types": [
+            "protein domains",
+            "protein families",
+            "functional sites",
+            "sequence motifs",
+            "protein signatures"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access",
+          "organism": "All organisms",
+          "format": [
+            "DAT",
+            "XML"
+          ],
+          "updated": "Regular updates",
+          "documentation": "https://prosite.expasy.org/prosite_doc.html",
+          "references": [
+            "PMID:36350672",
+            "PMID:16381852"
+          ],
+          "funding": "SIB Swiss Institute of Bioinformatics",
+          "use_cases": [
+            "Protein family classification",
+            "Functional site prediction",
+            "Protein domain identification"
+          ],
+          "integrates": [
+            "InterPro"
+          ],
+          "related_to": [
+            "Pfam",
+            "InterPro",
+            "SMART"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
+        {
           "name": "Protein Data Bank",
           "abbreviation": "PDB",
           "url": "https://www.rcsb.org",
@@ -1001,6 +2664,167 @@
             "Structure-function relationship studies",
             "Computational docking studies"
           ]
+        },
+        {
+          "name": "PRoteomics IDEntifications Database",
+          "abbreviation": "PRIDE",
+          "url": "https://www.ebi.ac.uk/pride",
+          "description": "PRIDE is a repository for mass spectrometry-based proteomics data and is one of the founding members of the ProteomeXchange consortium. It stores raw mass spectrometry data, identification results, and quantitative data.",
+          "category": "proteomics",
+          "subcategories": [
+            "proteomics-experiments"
+          ],
+          "data_types": [
+            "mass spectrometry data",
+            "protein identification data",
+            "protein quantification data",
+            "post-translational modifications"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Open access",
+          "organism": "All organisms",
+          "format": [
+            "mzML",
+            "mzIdentML",
+            "mzTab",
+            "RAW",
+            "WIFF"
+          ],
+          "updated": "Daily updates",
+          "documentation": "https://www.ebi.ac.uk/pride/markdownpage/pridesubmissionhelp",
+          "api_docs": "https://www.ebi.ac.uk/pride/ws/archive/v2/swagger-ui.html",
+          "references": [
+            "PMID:34723319",
+            "PMID:25638542"
+          ],
+          "funding": "EMBL-EBI, Wellcome Trust",
+          "parent": "EMBL-EBI",
+          "use_cases": [
+            "Proteomics data submission and retrieval",
+            "Reanalysis of published proteomics experiments",
+            "Method benchmarking"
+          ],
+          "member_of": [
+            "ProteomeXchange"
+          ],
+          "data_type_analog": "GEO",
+          "related_to": [
+            "MassIVE",
+            "PeptideAtlas"
+          ],
+          "database_type": "primary_archive"
+        },
+        {
+          "name": "Swiss-Prot",
+          "abbreviation": "Swiss-Prot",
+          "url": "https://www.uniprot.org/help/uniprotkb_swiss-prot",
+          "description": "Swiss-Prot is the manually annotated and reviewed section of the UniProt Knowledgebase. It provides high-quality, non-redundant protein sequence annotations with a high level of integration with other databases.",
+          "category": "proteomics",
+          "subcategories": [
+            "protein-sequences"
+          ],
+          "data_types": [
+            "protein sequences",
+            "protein functions",
+            "subcellular locations",
+            "post-translational modifications",
+            "protein domains",
+            "disease associations"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Creative Commons Attribution 4.0 International",
+          "organism": "All organisms",
+          "format": [
+            "FASTA",
+            "XML",
+            "RDF",
+            "TXT"
+          ],
+          "updated": "Biweekly releases",
+          "documentation": "https://www.uniprot.org/help/",
+          "api_docs": "https://www.uniprot.org/help/api",
+          "references": [
+            "PMID:36408920",
+            "PMID:33237286"
+          ],
+          "funding": "SIB Swiss Institute of Bioinformatics, EMBL-EBI, PIR",
+          "use_cases": [
+            "Protein functional annotation",
+            "Sequence analysis",
+            "Protein family classification"
+          ],
+          "member_of": [
+            "UniProt"
+          ],
+          "curated_from": [
+            "GenBank",
+            "EMBL",
+            "DDBJ"
+          ],
+          "database_type": "curated_knowledgebase"
+        },
+        {
+          "name": "TrEMBL",
+          "abbreviation": "TrEMBL",
+          "url": "https://www.uniprot.org/help/uniprotkb_trembl",
+          "description": "TrEMBL contains computationally analyzed protein sequences from the translation of coding sequences in the EMBL-Bank/GenBank/DDBJ databases. It provides automatic annotation and classification awaiting full manual annotation in Swiss-Prot.",
+          "category": "proteomics",
+          "subcategories": [
+            "protein-sequences"
+          ],
+          "data_types": [
+            "protein sequences",
+            "automated annotations",
+            "predicted protein features"
+          ],
+          "access": [
+            "web",
+            "API",
+            "download",
+            "FTP"
+          ],
+          "license": "Creative Commons Attribution 4.0 International",
+          "organism": "All organisms",
+          "format": [
+            "FASTA",
+            "XML",
+            "RDF",
+            "TXT"
+          ],
+          "updated": "Biweekly releases",
+          "documentation": "https://www.uniprot.org/help/",
+          "api_docs": "https://www.uniprot.org/help/api",
+          "references": [
+            "PMID:36408920"
+          ],
+          "funding": "SIB Swiss Institute of Bioinformatics, EMBL-EBI, PIR",
+          "use_cases": [
+            "Protein sequence retrieval",
+            "Automated protein annotation",
+            "Comprehensive proteome coverage"
+          ],
+          "member_of": [
+            "UniProt"
+          ],
+          "curated_from": [
+            "GenBank",
+            "EMBL",
+            "DDBJ"
+          ],
+          "related_to": [
+            "Swiss-Prot"
+          ],
+          "database_type": "primary_archive"
         },
         {
           "name": "UniProt",
@@ -1053,6 +2877,30 @@
           ]
         }
       ]
+    },
+    "structural-biology": {
+      "name": "Structural Biology",
+      "description": "Databases in the structural-biology category",
+      "count": 0,
+      "databases": []
+    },
+    "systems-biology": {
+      "name": "Systems Biology",
+      "description": "Databases in the systems-biology category",
+      "count": 0,
+      "databases": []
+    },
+    "tools-resources": {
+      "name": "Tools Resources",
+      "description": "Databases in the tools-resources category",
+      "count": 0,
+      "databases": []
+    },
+    "transcriptomics": {
+      "name": "Transcriptomics",
+      "description": "Databases in the transcriptomics category",
+      "count": 0,
+      "databases": []
     }
   }
 }

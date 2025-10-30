@@ -1,0 +1,33 @@
+{
+  "name": "Mouse Genome Informatics",
+  "abbreviation": "MGI",
+  "url": "https://www.informatics.jax.org",
+  "description": "MGI is the international database resource for the laboratory mouse, providing integrated genetic, genomic, and biological data to facilitate the study of human health and disease. It is a comprehensive resource for mouse genetics and genomics.",
+  "category": "model-organisms",
+  "subcategories": ["mammals", "genomics"],
+  "data_types": [
+    "genome sequences",
+    "gene annotations",
+    "phenotypes",
+    "human disease models",
+    "gene expression",
+    "alleles and mutations"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Open access",
+  "organism": "Mus musculus (laboratory mouse)",
+  "format": ["GFF", "FASTA", "GAF", "TSV"],
+  "updated": "Weekly updates",
+  "documentation": "https://www.informatics.jax.org/userhelp/",
+  "api_docs": "https://www.informatics.jax.org/downloads/reports/",
+  "references": ["PMID:34850941", "PMID:33231642"],
+  "funding": "NHGRI, NIH, The Jackson Laboratory",
+  "use_cases": [
+    "Mouse genetics research",
+    "Human disease modeling",
+    "Comparative genomics"
+  ],
+  "member_of": ["Alliance of Genome Resources"],
+  "related_to": ["Ensembl", "NCBI Gene"],
+  "database_type": "curated_knowledgebase"
+}

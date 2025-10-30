@@ -1,0 +1,33 @@
+{
+  "name": "neXtProt",
+  "abbreviation": "neXtProt",
+  "url": "https://www.nextprot.org",
+  "description": "neXtProt is a comprehensive human-centric protein knowledge platform that integrates and disseminates protein-related information. It focuses on human proteins and includes extensive functional annotations, variants, and disease associations.",
+  "category": "proteomics",
+  "subcategories": ["protein-sequences"],
+  "data_types": [
+    "protein sequences",
+    "protein isoforms",
+    "post-translational modifications",
+    "protein variants",
+    "protein functions",
+    "disease associations"
+  ],
+  "access": ["web", "API", "download", "FTP"],
+  "license": "Creative Commons Attribution 4.0 International",
+  "organism": "Human",
+  "format": ["XML", "TXT", "PEFF", "TTL"],
+  "updated": "Regular releases (quarterly)",
+  "documentation": "https://www.nextprot.org/help",
+  "api_docs": "https://www.nextprot.org/help/api",
+  "references": ["PMID:35243154", "PMID:27899619"],
+  "funding": "Swiss Institute of Bioinformatics, SIB",
+  "use_cases": [
+    "Human protein functional annotation",
+    "Variant effect prediction",
+    "Biomarker discovery"
+  ],
+  "curated_from": ["UniProtKB/Swiss-Prot"],
+  "related_to": ["UniProt", "Ensembl"],
+  "database_type": "curated_knowledgebase"
+}
