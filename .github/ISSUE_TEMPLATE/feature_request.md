@@ -1,6 +1,6 @@
 ---
 name: Feature Request
-about: Suggest an improvement or new feature for BioAwesome
+about: Suggest an improvement or new feature for BioHub
 title: '[FEATURE] '
 labels: 'enhancement'
 assignees: ''

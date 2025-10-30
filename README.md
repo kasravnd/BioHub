@@ -1,10 +1,10 @@
-# BioAwesome
+# BioHub
 
 > A curated encyclopedia of biological databases - helping researchers find the perfect database for their needs.
 
 ## About
 
-BioAwesome is a comprehensive, community-driven catalog of biological databases organized by category, data type, and research domain. Whether you're looking for genomic data, protein structures, or metabolic pathways, BioAwesome helps you discover the right resource.
+BioHub is a comprehensive, community-driven catalog of biological databases organized by category, data type, and research domain. Whether you're looking for genomic data, protein structures, or metabolic pathways, BioHub helps you discover the right resource.
 
 ## Features
 
@@ -79,7 +79,7 @@ Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 ## Structure
 
 ```
-BioAwesome/
+BioHub/
 ├── databases/              # Database entries organized by category
 │   ├── catalog.json       # Complete catalog with all metadata
 │   ├── genomics/

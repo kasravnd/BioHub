@@ -1,8 +1,8 @@
-# BioAwesome Database Schema Documentation
+# BioHub Database Schema Documentation
 
 ## Overview
 
-BioAwesome uses a structured JSON schema to capture comprehensive information about biological databases, including their relationships and roles within the broader bioinformatics ecosystem.
+BioHub uses a structured JSON schema to capture comprehensive information about biological databases, including their relationships and roles within the broader bioinformatics ecosystem.
 
 ## Schema File
 

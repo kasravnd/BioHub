@@ -1,6 +1,6 @@
 ---
 name: Add Database
-about: Suggest a biological database to add to BioAwesome
+about: Suggest a biological database to add to BioHub
 title: '[ADD] Database Name'
 labels: 'new-database'
 assignees: ''

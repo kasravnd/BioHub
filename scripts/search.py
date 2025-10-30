@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-BioAwesome Database Search Tool
+BioHub Database Search Tool
 
-Search and filter biological databases from the BioAwesome catalog.
+Search and filter biological databases from the BioHub catalog.
 """
 
 import json
@@ -156,7 +156,7 @@ def format_database_output(db: Dict[str, Any], detailed: bool = False) -> str:
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Search BioAwesome database catalog',
+        description='Search BioHub database catalog',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:

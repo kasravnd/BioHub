@@ -1,6 +1,6 @@
-# BioAwesome Scripts
+# BioHub Scripts
 
-Utility scripts for managing and searching the BioAwesome database catalog.
+Utility scripts for managing and searching the BioHub database catalog.
 
 ## Available Scripts
 

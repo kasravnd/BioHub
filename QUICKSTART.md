@@ -1,6 +1,6 @@
-# BioAwesome Quick Start Guide
+# BioHub Quick Start Guide
 
-Get started with BioAwesome in 5 minutes!
+Get started with BioHub in 5 minutes!
 
 ## For Users: Finding Databases
 
@@ -58,8 +58,8 @@ We'll review and add it to the catalog.
 
 ```bash
 # Fork the repo on GitHub, then:
-git clone https://github.com/YOUR-USERNAME/BioAwesome.git
-cd BioAwesome
+git clone https://github.com/YOUR-USERNAME/BioHub.git
+cd BioHub
 ```
 
 #### Step 2: Create a Database Entry
@@ -203,7 +203,7 @@ python3 scripts/search.py --data-type "expression"
 
 ## Community
 
-BioAwesome is community-driven! We welcome:
+BioHub is community-driven! We welcome:
 - Database additions and updates
 - Documentation improvements
 - New features and tools
